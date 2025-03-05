@@ -1,4 +1,4 @@
-import{t as r,h as p,a as i,s as l}from"../chunks/CZ60cJ-Z.js";import{i as c}from"../chunks/DDwkjJ0y.js";import{p as d,f,t as s,a as h,$ as q,c as v,r as x,n as b}from"../chunks/CEXH81_1.js";import{s as g}from"../chunks/-SVjiuRX.js";var _=r('<meta property="og:title">'),S=r(`<h1 class="mt-3 mb-6 pb-3 text-5xl border-b-[1px] border-gray-700"> </h1> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque
+import{t as r,h as p,a as i,s as l}from"../chunks/LDhDVrzw.js";import{i as c}from"../chunks/DMtp_C21.js";import{p as d,f,t as s,a as h,$ as q,c as v,r as x,n as b}from"../chunks/D7FotVv5.js";import{s as g}from"../chunks/CPzxv4lG.js";var _=r('<meta property="og:title">'),S=r(`<h1 class="mt-3 mb-6 pb-3 text-5xl border-b-[1px] border-gray-700"> </h1> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque
     voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti
     quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium
     totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla
