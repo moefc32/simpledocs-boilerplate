@@ -5,7 +5,7 @@
 @import '@fontsource-variable/archivo';
 
 :root {
-    --background: hsl(240 5% 20%);
+    --background: hsl(240 5% 10%);
     --background-alt: hsl(0 0% 10%);
     --foreground: hsl(0 0% 95%);
     --foreground-alt: hsl(0 0% 70%);

@@ -1,10 +1,36 @@
 <script>
+    import { page } from '$app/stores';
+
+    export let documentation;
+
+    $: location = $page.url.pathname;
 </script>
 
 <aside
-    class="flex flex-1 flex-col items-start gap-3 p-6 max-w-[300px] min-h-[calc(100vh-60px)] border-e-[1px] border-gray-500"
+    class="flex flex-1 flex-col items-stretch gap-1 p-6 max-w-[250px] min-h-[calc(100vh-70px)] max-h-[calc(100vh-70px)] border-e-[1px] border-gray-700 overflow-y-auto"
 >
-    <button>Link 1</button>
-    <button>Link 2</button>
-    <button>Link 3</button>
+    <a
+        href="/"
+        class="{'/' === location
+            ? '-mx-2 px-2 py-1 bg-blue-500/60 hover:bg-blue-500/75 text-white'
+            : 'py-1 text-white/60 hover:text-white'} transition-all duration-150 ease-in-out rounded-sm"
+    >
+        Home
+    </a>
+    {#each documentation as section, i}
+        <div class="mt-5 mb-2 text-[.8rem] font-bold uppercase">
+            {section.name}
+        </div>
+        {#each section.pages as item, j}
+            <a
+                href={item.slug}
+                class="{`/${item.slug}` === location
+                    ? '-mx-2 px-2 py-1 bg-blue-500/60 hover:bg-blue-500/75 text-white'
+                    : 'py-1 text-white/60 hover:text-white'} transition-all duration-150 ease-in-out rounded-sm"
+                data-sveltekit-reload
+            >
+                {item.title}
+            </a>
+        {/each}
+    {/each}
 </aside>
