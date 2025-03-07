@@ -14,9 +14,9 @@
 </svelte:head>
 
 <Header />
-<div class="flex">
+<div class="flex flex-1 items-stretch h-full">
     <Sidebar {documentation} />
-    <div class="flex flex-1 flex-col gap-6">
+    <div class="flex flex-1 flex-col gap-6 max-w-[calc(100%-250px)]">
         <main class="flex flex-1 flex-col p-6 leading-7">
             <slot />
         </main>
