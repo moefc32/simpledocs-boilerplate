@@ -5,23 +5,26 @@
     import Hyperlink from '$lib/component/Hyperlink.svelte';
 
     export let data;
+
+    $: title = data?.title;
+    $: contents = data?.contents || [];
 </script>
 
 <svelte:head>
-    <title>{`${data.title} | ${import.meta.env.VITE_APP_NAME}`}</title>
+    <title>{`${title} | ${import.meta.env.VITE_APP_NAME}`}</title>
     <meta
         property="og:title"
-        content={`${data.title} | ${import.meta.env.VITE_APP_NAME}`}
+        content={`${title} | ${import.meta.env.VITE_APP_NAME}`}
     />
 </svelte:head>
 
 <div class="flex flex-1 flex-col gap-3">
     <h1 class="my-3 pb-3 text-5xl border-b-[1px] border-gray-700">
-        {data.title}
+        {title}
     </h1>
-    {#each data.contents as item, i}
-        {#if typeof item === 'string'}
-            <p>{item}</p>
+    {#each contents as item, i}
+        {#if item.type === 'paragraph'}
+            <p>{item.value}</p>
         {:else if item.type === 'section-title'}
             <h2 class="my-3 text-3xl">{item.value}</h2>
         {:else if item.type === 'code'}

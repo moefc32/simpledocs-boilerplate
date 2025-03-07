@@ -14,9 +14,7 @@ export async function load({ params }) {
     for (const category of documentation) {
         for (const page of category.pages) {
             if (page.slug === slug) {
-                return {
-                    ...page,
-                };
+                return page;
             }
         }
     }
