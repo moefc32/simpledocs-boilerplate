@@ -1,8 +1,14 @@
 <script>
-    import Alert from '$lib/component/Alert.svelte';
-    import DownloadButton from '$lib/component/DownloadButton.svelte';
     import Code from '$lib/component/Code.svelte';
+    import DownloadButton from '$lib/component/DownloadButton.svelte';
+    import Alert from '$lib/component/Alert.svelte';
     import Hyperlink from '$lib/component/Hyperlink.svelte';
+
+    import Image from '$lib/component/Image.svelte';
+    import Audio from '$lib/component/Audio.svelte';
+    import Video from '$lib/component/Video.svelte';
+    import PdfReader from '$lib/component/PdfReader.svelte';
+    import Maps from '$lib/component/Maps.svelte';
 
     export let data;
 
@@ -23,8 +29,8 @@
         {title}
     </h1>
     {#each contents as item, i}
-        {#if item.type === 'paragraph'}
-            <p>{item.value}</p>
+        {#if typeof item === 'string'}
+            <p>{item}</p>
         {:else if item.type === 'section-title'}
             <h2 class="my-3 text-3xl">{item.value}</h2>
         {:else if item.type === 'code'}
@@ -36,15 +42,15 @@
         {:else if item.type === 'hyperlink'}
             <Hyperlink {item} />
         {:else if item.type === 'image'}
-            {item.value}
+            <Image {item} />
         {:else if item.type === 'audio'}
-            {item.value}
-        {:else if item.type === 'video'}
-            {item.value}
-        {:else if item.type === 'doc'}
-            {item.value}
+            <Audio target={item.target} />
+        {:else if item.type.startsWith('video')}
+            <Video {item} />
+        {:else if item.type === 'pdf'}
+            <PdfReader target={item.target} />
         {:else if item.type === 'maps'}
-            {item.value}
+            <Maps target={item.target} />
         {/if}
     {/each}
 </div>

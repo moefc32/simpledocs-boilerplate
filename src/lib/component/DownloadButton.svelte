@@ -4,11 +4,12 @@
     export let item;
 
     const states = {
-        download: 'bg-zinc-500/25 text-white/85',
-        'download-info': 'bg-blue-400/85 text-black',
-        'download-success': 'bg-green-400/85 text-black',
-        'download-warning': 'bg-yellow-400/85 text-black',
-        'download-danger': 'bg-red-400/85 text-white/85',
+        download: 'bg-zinc-500/40 hover:bg-zinc-500/25 text-white/85',
+        'download-info': 'bg-blue-400/85 hover:bg-blue-400/70 text-black',
+        'download-success': 'bg-green-400/85 hover:bg-green-400/70 text-black',
+        'download-warning':
+            'bg-yellow-400/85 hover:bg-yellow-400/70 text-black',
+        'download-danger': 'bg-red-400/85 hover:bg-red-400/70 text-white/85',
     };
 
     let isDownloading = false;

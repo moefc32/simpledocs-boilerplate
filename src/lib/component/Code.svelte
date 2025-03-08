@@ -18,7 +18,7 @@
                 changes: {
                     from: 0,
                     to: view.state.doc.length,
-                    insert: newValue,
+                    insert: JSON.stringify(JSON.parse(newValue), null, 4),
                 },
             });
         }
@@ -26,7 +26,7 @@
 
     onMount(() => {
         let state = EditorState.create({
-            doc: value,
+            doc: JSON.stringify(JSON.parse(value), null, 4),
             extensions: [
                 minimalSetup,
                 json(),
@@ -51,8 +51,11 @@
 </script>
 
 <div class="my-3 py-3 bg-[#282c34] rounded-lg">
-    <div
-        bind:this={editorContainer}
-        class="text-[1.15em] w-full min-h-[15px]"
-    ></div>
+    <div bind:this={editorContainer} class="w-full min-h-[15px]"></div>
 </div>
+
+<style>
+    :global(* .cm-scroller) {
+        font-family: var(--font-mono) !important;
+    }
+</style>

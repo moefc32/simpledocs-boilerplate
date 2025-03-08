@@ -6,37 +6,25 @@
                 "title": "Adding Contents",
                 "slug": "adding-contents",
                 "contents": [
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis."
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis.",
                     {
                         "type": "section-title",
                         "value": "Basic Concept"
                     },
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis."
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis.",
                     {
                         "type": "code",
-                        "value": "[\n    {\n        \"name\": \"Category Name\",\n        \"pages\": [\n            {\n                \"title\": \"Page Name\",\n                \"slug\": \"page-slug\",\n                \"contents\": []\n            }\n        ]\n    }\n    // you can add more category here\n]"
+                        "value": "[\n{\n\"name\": \"Category Name\",\n\"pages\": [\n{\n\"title\": \"Page Name\",\n\"slug\": \"page-slug\",\n\"contents\": []\n}\n]\n}\n]"
                     },
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!"
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "code",
-                        "value": "[\n    {\n        \"name\": \"Category Name\",\n        \"pages\": [\n            {\n                \"title\": \"Page Name\",\n                \"slug\": \"page-slug\",\n                \"contents\": [\n                    \"Here goes a paragraph content.\"\n                    // you can add more page content here\n                ]\n            }\n        ]\n    }\n]"
+                        "value": "[\n{\n\"name\": \"Category Name\",\n\"pages\": [\n{\n\"title\": \"Page Name\",\n\"slug\": \"page-slug\",\n\"contents\": [\n\"Here goes a paragraph content.\"\n]\n}\n]\n}\n]"
                     },
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!"
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "code",
-                        "value": "[\n    {\n        \"name\": \"Category Name\",\n        \"pages\": [\n            {\n                \"title\": \"Page Name\",\n                \"slug\": \"page-slug\",\n                \"contents\": [\n                    \"Here goes a paragraph content.\",\n                    {\n                        \"type\": \"section-title\",\n                        \"value\": \"This is a Section Title\"\n                    },\n                    \"Here goes the second paragraph.\"\n                ]\n            }\n        ]\n    }\n]"
+                        "value": "[\n{\n\"name\": \"Category Name\",\n\"pages\": [\n{\n\"title\": \"Page Name\",\n\"slug\": \"page-slug\",\n\"contents\": [\n\"Here goes a paragraph content.\",\n{\n\"type\": \"section-title\",\n\"value\": \"This is a Section Title\"\n},\n\"Here goes the second paragraph.\"\n]\n}\n]\n}\n]"
                     },
                     {
                         "type": "paragraph",
@@ -48,21 +36,15 @@
                 "title": "Code Snippet",
                 "slug": "code-snippet",
                 "contents": [
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis."
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis.",
                     {
                         "type": "section-title",
-                        "value": "Code Snippets"
+                        "value": "Example"
                     },
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!"
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "code",
-                        "value": "{\n    \"type\": \"code\",\n    \"value\": \"{}\"\n}"
+                        "value": "{\n\"type\": \"code\",\n\"value\": \"<stringified JSON>\"\n}"
                     }
                 ]
             },
@@ -70,18 +52,12 @@
                 "title": "Download Button",
                 "slug": "download-button",
                 "contents": [
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis."
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis.",
                     {
                         "type": "section-title",
-                        "value": "Code Snippets"
+                        "value": "Example"
                     },
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!"
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "download",
                         "label": "Download Example",
@@ -89,12 +65,9 @@
                     },
                     {
                         "type": "code",
-                        "value": "{\n    \"type\": \"download\",\n    \"label\": \"Download Example\",\n    \"target\": \"/docs/plants.jpg\"\n}"
+                        "value": "{\n\"type\": \"download\",\n\"label\": \"<label for download button>\",\n\"target\": \"<path to file>\"\n}"
                     },
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!"
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "download-info",
                         "label": "Download Example",
@@ -102,12 +75,9 @@
                     },
                     {
                         "type": "code",
-                        "value": "{\n    \"type\": \"download-info\",\n    \"label\": \"Download Example\",\n    \"target\": \"/docs/plants.jpg\"\n}"
+                        "value": "{\n\"type\": \"download-info\",\n\"label\": \"<label for download button>\",\n\"target\": \"<path to file>\"\n}"
                     },
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!"
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "download-success",
                         "label": "Download Example",
@@ -115,12 +85,9 @@
                     },
                     {
                         "type": "code",
-                        "value": "{\n    \"type\": \"download-success\",\n    \"label\": \"Download Example\",\n    \"target\": \"/docs/plants.jpg\"\n}"
+                        "value": "{\n\"type\": \"download-success\",\n\"label\": \"<label for download button>\",\n\"target\": \"<path to file>\"\n}"
                     },
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!"
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "download-warning",
                         "label": "Download Example",
@@ -128,12 +95,9 @@
                     },
                     {
                         "type": "code",
-                        "value": "{\n    \"type\": \"download-warning\",\n    \"label\": \"Download Example\",\n    \"target\": \"/docs/plants.jpg\"\n}"
+                        "value": "{\n\"type\": \"download-warning\",\n\"label\": \"<label for download button>\",\n\"target\": \"<path to file>\"\n}"
                     },
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!"
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "download-danger",
                         "label": "Download Example",
@@ -141,7 +105,7 @@
                     },
                     {
                         "type": "code",
-                        "value": "{\n    \"type\": \"download-danger\",\n    \"label\": \"Download Example\",\n    \"target\": \"/docs/plants.jpg\"\n}"
+                        "value": "{\n\"type\": \"download-danger\",\n\"label\": \"<label for download button>\",\n\"target\": \"<path to file>\"\n}"
                     }
                 ]
             },
@@ -149,73 +113,55 @@
                 "title": "Important Alert",
                 "slug": "important-alert",
                 "contents": [
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis."
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis.",
                     {
                         "type": "section-title",
-                        "value": "Code Snippets"
+                        "value": "Example"
                     },
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!"
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "alert",
-                        "value": "Some information goes here..."
+                        "value": "Show some information here..."
                     },
                     {
                         "type": "code",
-                        "value": "{\n    \"type\": \"alert\",\n    \"value\": \"Some information goes here...\"\n}"
+                        "value": "{\n\"type\": \"alert\",\n\"value\": \"<some informative text>\"\n}"
                     },
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!"
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "alert-info",
-                        "value": "Some information goes here..."
+                        "value": "Show some information here..."
                     },
                     {
                         "type": "code",
-                        "value": "{\n    \"type\": \"alert-info\",\n    \"value\": \"Some information goes here...\"\n}"
+                        "value": "{\n\"type\": \"alert-info\",\n\"value\": \"<some informative text>\"\n}"
                     },
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!"
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "alert-success",
-                        "value": "Some information goes here..."
+                        "value": "Show some information here..."
                     },
                     {
                         "type": "code",
-                        "value": "{\n    \"type\": \"alert-success\",\n    \"value\": \"Some information goes here...\"\n}"
+                        "value": "{\n\"type\": \"alert-success\",\n\"value\": \"<some informative text>\"\n}"
                     },
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!"
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "alert-warning",
-                        "value": "Some information goes here..."
+                        "value": "Show some information here..."
                     },
                     {
                         "type": "code",
-                        "value": "{\n    \"type\": \"alert-warning\",\n    \"value\": \"Some information goes here...\"\n}"
+                        "value": "{\n\"type\": \"alert-warning\",\n\"value\": \"<some informative text>\"\n}"
                     },
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!"
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "alert-danger",
-                        "value": "Some information goes here..."
+                        "value": "Show some information here..."
                     },
                     {
                         "type": "code",
-                        "value": "{\n    \"type\": \"alert-danger\",\n    \"value\": \"Some information goes here...\"\n}"
+                        "value": "{\n\"type\": \"alert-danger\",\n\"value\": \"<some informative text>\"\n}"
                     }
                 ]
             },
@@ -223,18 +169,12 @@
                 "title": "Hyperlink",
                 "slug": "hyperlink",
                 "contents": [
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis."
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis.",
                     {
                         "type": "section-title",
-                        "value": "Code Snippets"
+                        "value": "Example"
                     },
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!"
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "hyperlink",
                         "label": "Faizal Chan's Website",
@@ -242,7 +182,7 @@
                     },
                     {
                         "type": "code",
-                        "value": "{\n    \"type\": \"hyperlink\",\n    \"label\": \"Faizal Chan's Website\",\n    \"target\": \"https://mf-chan.com\"\n}"
+                        "value": "{\n\"type\": \"hyperlink\",\n\"label\": \"<label for target URL>\",\n\"target\": \"<target URL>\"\n}"
                     }
                 ]
             }
@@ -255,25 +195,43 @@
                 "title": "Image",
                 "slug": "image",
                 "contents": [
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis."
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis.",
                     {
                         "type": "section-title",
-                        "value": "Code Snippets"
+                        "value": "Example"
                     },
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!"
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "image",
-                        "value": "Lorem Ipsum"
+                        "title": "Plants image",
+                        "target": "/docs/plants.jpg"
                     },
                     {
                         "type": "code",
-                        "value": "{\n    \"property\": \"Lorem ipsum\"\n}"
+                        "value": "{\n\"type\": \"image\",\n\"title\": \"<image title>\",\n\"target\": \"<path to image file>\"\n}"
+                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
+                    {
+                        "type": "image",
+                        "title": "Plants image",
+                        "target": "/docs/plants.jpg",
+                        "width": "450px"
+                    },
+                    {
+                        "type": "code",
+                        "value": "{\n\"type\": \"image\",\n\"title\": \"<image title>\",\n\"target\": \"<path to image file>\",\n\"width\": \"<custom image width>\"\n}"
+                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
+                    {
+                        "type": "image",
+                        "title": "Plants image",
+                        "target": "/docs/plants.jpg",
+                        "background": "#ffffff",
+                        "width": "450px"
+                    },
+                    {
+                        "type": "code",
+                        "value": "{\n\"type\": \"image\",\n\"title\": \"<image title>\",\n\"target\": \"<path to image file>\",\n\"background\": \"<background color code>\",\n\"width\": \"<custom image width>\"\n}"
                     }
                 ]
             },
@@ -281,25 +239,19 @@
                 "title": "Audio",
                 "slug": "audio",
                 "contents": [
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis."
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis.",
                     {
                         "type": "section-title",
-                        "value": "Code Snippets"
+                        "value": "Example"
                     },
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!"
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "audio",
-                        "value": "Lorem Ipsum"
+                        "target": "https://static.mf-chan.com/dummy/casa_rosa-pienso_viento.mp3"
                     },
                     {
                         "type": "code",
-                        "value": "{\n    \"property\": \"Lorem ipsum\"\n}"
+                        "value": "{\n\"type\": \"audio\",\n\"target\": \"<path to audio file>\"\n}"
                     }
                 ]
             },
@@ -307,77 +259,68 @@
                 "title": "Video",
                 "slug": "video",
                 "contents": [
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis."
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis.",
                     {
                         "type": "section-title",
-                        "value": "Code Snippets"
+                        "value": "Example"
                     },
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!"
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "video",
-                        "value": "Lorem Ipsum"
+                        "target": "https://static.mf-chan.com/dummy/copyrightcloud-nature.mp4"
                     },
                     {
                         "type": "code",
-                        "value": "{\n    \"property\": \"Lorem ipsum\"\n}"
+                        "value": "{\n\"type\": \"video\",\n\"target\": \"<path to video file>\"\n}"
+                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
+                    {
+                        "type": "video-youtube",
+                        "target": "https://www.youtube.com/embed/cHBqwj0Ed_I?si=a7QK9B_pPqYsBjUC"
+                    },
+                    {
+                        "type": "code",
+                        "value": "{\n\"type\": \"video-youtube\",\n\"target\": \"<YouTube video embed URL>\"\n}"
                     }
                 ]
             },
             {
-                "title": "Document",
-                "slug": "document",
+                "title": "PDF Preview",
+                "slug": "pdf-preview",
                 "contents": [
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis."
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis.",
                     {
                         "type": "section-title",
-                        "value": "Code Snippets"
+                        "value": "Example"
                     },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!"
-                    },
-                    {
-                        "type": "doc",
-                        "value": "Lorem Ipsum"
+                        "type": "pdf",
+                        "target": "/docs/paper.pdf"
                     },
                     {
                         "type": "code",
-                        "value": "{\n    \"property\": \"Lorem ipsum\"\n}"
+                        "value": "{\n\"type\": \"pdf\",\n\"target\": \"<path to PDF file>\"\n}"
                     }
                 ]
             },
             {
-                "title": "Maps",
-                "slug": "maps",
+                "title": "Google Maps",
+                "slug": "google-maps",
                 "contents": [
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis."
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis.",
                     {
                         "type": "section-title",
-                        "value": "Code Snippets"
+                        "value": "Example"
                     },
-                    {
-                        "type": "paragraph",
-                        "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!"
-                    },
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "maps",
-                        "value": "Lorem Ipsum"
+                        "target": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9007508209093!2d107.61612687492338!3d-6.902471493096827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e64c5e8866e5%3A0x37be7ac9d575f7ed!2sGedung%20Sate!5e0!3m2!1sen!2sid!4v1741356033484!5m2!1sen!2sid"
                     },
                     {
                         "type": "code",
-                        "value": "{\n    \"property\": \"Lorem ipsum\"\n}"
+                        "value": "{\n\"type\": \"maps\",\n\"target\": \"<Google Maps embed URL>\"\n}"
                     }
                 ]
             }

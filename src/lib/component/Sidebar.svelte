@@ -15,7 +15,6 @@
         class="{base.replace(/\/$/, '') === location
             ? 'bg-blue-500/60 hover:bg-blue-500/75 text-white'
             : 'text-white/60 hover:text-white'} -mx-2 px-2 py-1 transition duration-150 ease-in-out rounded-sm"
-        data-sveltekit-reload
     >
         Home
     </a>
@@ -29,7 +28,6 @@
                 class="{`${base}/${item.slug}` === location
                     ? 'bg-blue-500/60 hover:bg-blue-500/75 text-white'
                     : 'text-white/60 hover:text-white'} -mx-2 px-2 py-1 transition duration-150 ease-in-out rounded-sm"
-                data-sveltekit-reload
             >
                 {item.title}
             </a>
