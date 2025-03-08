@@ -4,7 +4,7 @@
     export let item;
 
     const states = {
-        alert: 'bg-zinc-500/40 text-white/85',
+        alert: 'bg-slate-500/40 text-white/85',
         'alert-info': 'bg-blue-400/85 text-black',
         'alert-success': 'bg-green-400/85 text-black',
         'alert-warning': 'bg-yellow-400/85 text-black',

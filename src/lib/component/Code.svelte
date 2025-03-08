@@ -50,8 +50,10 @@
     $: if (view) updateEditorContent(value);
 </script>
 
-<div class="my-3 py-3 bg-[#282c34] rounded-lg">
-    <div bind:this={editorContainer} class="w-full min-h-[15px]"></div>
+<div
+    class="my-3 bg-[#282c34] w-full max-w-[calc(100vw-4rem)] rounded-lg overflow-hidden"
+>
+    <div bind:this={editorContainer} class="text-sm w-full min-h-[15px]"></div>
 </div>
 
 <style>

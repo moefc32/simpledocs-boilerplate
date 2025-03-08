@@ -8,7 +8,7 @@
 </script>
 
 <aside
-    class="flex flex-1 flex-col items-stretch gap-1 p-6 min-w-[250px] max-w-[250px] min-h-[calc(100vh-70px)] border-e-[1px] border-gray-700"
+    class="hidden md:flex flex-1 flex-col items-stretch gap-1 p-6 min-w-[250px] max-w-[250px] min-h-[calc(100vh-70px)] border-e-[1px] border-gray-700"
 >
     <a
         href={base.replace(/\/$/, '')}

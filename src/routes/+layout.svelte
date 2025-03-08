@@ -16,8 +16,8 @@
 <Header />
 <div class="flex flex-1 items-stretch h-full">
     <Sidebar {documentation} />
-    <div class="flex flex-1 flex-col gap-6 max-w-[calc(100%-250px)]">
-        <main class="flex flex-1 flex-col p-6 leading-7 max-w-5xl">
+    <div class="flex flex-1 flex-col gap-6 md:max-w-[calc(100%-250px)]">
+        <main class="flex flex-1 flex-col p-6 leading-7 w-full max-w-5xl">
             <slot />
         </main>
         <Footer />

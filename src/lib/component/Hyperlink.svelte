@@ -7,7 +7,7 @@
 <a
     href={item.target}
     target="_blank"
-    class="flex items-center gap-4 px-5 py-3 bg-blue-500/60 hover:bg-blue-500/75 text-[15px] leading-5 transition duration-250 ease-in-out rounded-lg cursor-pointer"
+    class="flex items-center gap-4 px-5 py-3 bg-violet-500/60 hover:bg-violet-500/75 text-[15px] leading-5 transition duration-250 ease-in-out rounded-lg cursor-pointer"
     title={item.label || item.target}
 >
     <Link size={20} />

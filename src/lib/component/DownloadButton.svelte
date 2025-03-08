@@ -4,7 +4,7 @@
     export let item;
 
     const states = {
-        download: 'bg-zinc-500/40 hover:bg-zinc-500/25 text-white/85',
+        download: 'bg-slate-500/40 hover:bg-slate-500/25 text-white/85',
         'download-info': 'bg-blue-400/85 hover:bg-blue-400/70 text-black',
         'download-success': 'bg-green-400/85 hover:bg-green-400/70 text-black',
         'download-warning':
@@ -49,6 +49,7 @@
     class="inline-flex items-center gap-2 self-start px-4 py-2 {states[
         item.type
     ]} transition duration-150 ease-in-out rounded-lg cursor-pointer"
+    disabled={isDownloading}
     on:click={() => downloadFile(item.target)}
 >
     <Download size={16} />
