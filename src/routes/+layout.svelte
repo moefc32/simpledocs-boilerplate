@@ -13,7 +13,7 @@
     <meta property="og:description" content="Simpledocs" />
 </svelte:head>
 
-<Header />
+<Header {documentation} />
 <div class="flex flex-1 items-stretch h-full">
     <Sidebar {documentation} />
     <div class="flex flex-1 flex-col gap-6 md:max-w-[calc(100%-250px)]">
