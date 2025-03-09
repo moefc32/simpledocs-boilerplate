@@ -1,34 +1,35 @@
 <script>
     import { base } from '$app/paths';
-    import { BookOpen } from 'lucide-svelte';
+    import { BookOpen, Menu } from 'lucide-svelte';
 
+    import sidebarToggle from './stores/sidebarToggle';
     import Search from './Search.svelte';
 
-    export let documentation;
-
-    const searchSource = documentation.flatMap(category =>
-        category.pages.map(page => ({
-            title: page.title,
-            slug: page.slug,
-            contents: page.contents
-                .map(content =>
-                    typeof content === 'string'
-                        ? content
-                        : typeof content === 'object' && 'value' in content
-                          ? content.value
-                          : '',
-                )
-                .join(' '),
-        })),
-    );
+    export let searchSource;
 </script>
 
 <header
-    class="flex items-center gap-3 px-6 w-full h-[70px] border-b-[1px] border-gray-700"
+    class="flex items-center gap-3 px-6 bg-[hsl(225,20%,15%)] w-full h-[70px] border-b-[1px] border-gray-700 z-[1200] fixed top-0 left-0"
 >
-    <a href={base} class="flex items-center gap-2 me-auto text-[1.35rem]">
+    <a
+        href={base}
+        class="flex items-center gap-2 me-auto text-[1.35rem]"
+        on:click={() => sidebarToggle.set(false)}
+    >
         <BookOpen size={24} />
-        {import.meta.env.VITE_APP_NAME}
+        <span
+            class="truncate max-w-[calc(100vw-150px)] md:max-w-[calc(100vw-400px)] overflow-hidden"
+        >
+            {import.meta.env.VITE_APP_NAME}
+        </span>
     </a>
-    <Search {searchSource} />
+    <div class="hidden md:block ms-auto">
+        <Search {searchSource} />
+    </div>
+    <button
+        class="md:hidden px-3 h-[40px] border-[1px] border-gray-700 rounded-sm cursor-pointer"
+        on:click={() => sidebarToggle.set(!$sidebarToggle)}
+    >
+        <Menu />
+    </button>
 </header>

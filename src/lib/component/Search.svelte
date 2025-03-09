@@ -4,6 +4,8 @@
     import { Search } from 'lucide-svelte';
     import Fuse from 'fuse.js';
 
+    import sidebarToggle from './stores/sidebarToggle';
+
     export let searchSource;
 
     const fuseOptions = {
@@ -67,34 +69,37 @@
     $: if (!searchKeyword) searchResult = [];
 </script>
 
-<div class="hidden md:flex items-center ms-auto text-sm relative">
-    {#if !isSearchInputActive}
-        <span class="-me-[250px] text-gray-500">
-            <kbd>Ctrl</kbd> + <kbd>K</kbd>
-        </span>
-    {/if}
-    <span class="-me-7 text-gray-500">
-        <Search size={14} />
+<div class="flex items-center text-sm relative">
+    <span class="flex justify-center text-gray-500 w-10">
+        <Search size={16} />
     </span>
     <input
         bind:this={searchInput}
         type="search"
-        class="ps-9 {isSearchInputActive
-            ? 'pe-3'
-            : 'pe-20'} w-[280px] h-[35px] border-[1px] border-gray-600 rounded-lg"
+        class="ps-8 {isSearchInputActive
+            ? 'me-0'
+            : '-me-18'} w-full -ms-10 md:w-[280px] h-[40px] border-[1px] border-gray-600 rounded-lg"
         placeholder="Search..."
         on:input={handleKeydown}
         bind:value={searchKeyword}
     />
+    {#if !isSearchInputActive}
+        <span class="hidden md:inline text-gray-500 w-18">
+            <kbd>Ctrl</kbd> + <kbd>K</kbd>
+        </span>
+    {/if}
     {#if searchResult.length && isSearchInputActive}
         <div
-            class="search-dropdown flex flex-col gap-1 p-2 bg-slate-800 w-[280px] border-[1px] border-gray-600 rounded-lg shadow-lg absolute z-[100] top-[60px] right-0"
+            class="search-dropdown flex flex-col gap-1 p-2 bg-slate-800 w-full md:w-[280px] border-[1px] border-gray-600 rounded-lg shadow-xl absolute z-[100] top-[45px] md:top-[60px] right-0"
         >
             {#each searchResult as item, i}
                 <a
-                    href={item.slug}
+                    href={`${base}/${item.slug}`}
                     class="px-3 py-2 hover:bg-gray-500/25 rounded-sm transition duration-150 ease-in-out"
-                    on:click={() => (searchKeyword = '')}
+                    on:click={() => {
+                        searchKeyword = '';
+                        sidebarToggle.set(false);
+                    }}
                 >
                     {item.title}
                 </a>

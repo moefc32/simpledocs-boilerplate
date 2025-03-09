@@ -9,11 +9,14 @@
     import Video from '$lib/component/Video.svelte';
     import PdfReader from '$lib/component/PdfReader.svelte';
     import Maps from '$lib/component/Maps.svelte';
+    import { ChevronLeft, ChevronRight } from 'lucide-svelte';
 
     export let data;
 
-    $: title = data?.title;
-    $: contents = data?.contents || [];
+    $: title = data.title;
+    $: contents = data.contents || [];
+    $: previousPage = data.previousPage;
+    $: nextPage = data.nextPage;
 </script>
 
 <svelte:head>
@@ -53,4 +56,30 @@
             <Maps target={item.target} />
         {/if}
     {/each}
+    <nav class="flex justify-between items-center gap-3 mt-6">
+        <div class="flex justify-start items-center">
+            {#if previousPage}
+                <a
+                    href={previousPage.slug}
+                    class="flex items-center gap-2 px-4 py-3 hover:bg-gray-700/50 transition duration-150 ease-in-out border-[1px] border-gray-700 rounded-lg"
+                    title="Navigate to previous page"
+                >
+                    <ChevronLeft size={16} />
+                    <span class="text-sm">{previousPage.title}</span>
+                </a>
+            {/if}
+        </div>
+        <div class="flex justify-end items-center">
+            {#if nextPage}
+                <a
+                    href={nextPage.slug}
+                    class="flex items-center gap-2 px-4 py-3 hover:bg-gray-700/50 transition duration-150 ease-in-out border-[1px] border-gray-700 rounded-lg"
+                    title="Navigate to next page"
+                >
+                    <span class="text-sm">{nextPage.title}</span>
+                    <ChevronRight size={16} />
+                </a>
+            {/if}
+        </div>
+    </nav>
 </div>
