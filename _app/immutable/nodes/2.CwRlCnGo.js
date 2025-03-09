@@ -1,4 +1,4 @@
-import{t as o,h as c,a as t,s as d}from"../chunks/DuQhZ8p8.js";import{i as v}from"../chunks/DhWre19X.js";import{p as f,t as s,a as q,$ as h,c as r,r as u,n as x}from"../chunks/D_pRvsFy.js";import{s as g}from"../chunks/2_KuQzxB.js";var b=o('<meta property="og:title">'),_=o(`<div class="flex flex-1 flex-col gap-3"><h1 class="my-3 pb-3 text-5xl border-b-[1px] border-gray-700"> </h1> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis
+import{t as o,h as c,a as t,s as d}from"../chunks/DuQhZ8p8.js";import{i as v}from"../chunks/DhWre19X.js";import{p as f,t as s,a as q,$ as h,c as r,r as u,n as x}from"../chunks/D_pRvsFy.js";import{s as g}from"../chunks/QfRptelo.js";var b=o('<meta property="og:title">'),_=o(`<div class="flex flex-1 flex-col gap-3"><h1 class="my-3 pb-3 text-5xl border-b-[1px] border-gray-700"> </h1> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis
         neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint
         deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni
         praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum,
