@@ -47,9 +47,27 @@
     });
 </script>
 
-<div class=" w-full h-[calc(100dvh-100px)] rounded-lg overflow-hidden">
+<div class="w-full h-[calc(100dvh-100px)] rounded-lg overflow-hidden">
     <div
         bind:this={container}
         class="flex flex-col gap-3 bg-slate-500/50 w-full h-full border-[1px] border-gray-700 overflow-y-auto"
     ></div>
 </div>
+
+<style>
+    div::-webkit-scrollbar {
+        width: 0.85rem;
+    }
+
+    div::-webkit-scrollbar-track {
+        background: rgba(100%, 100%, 100%, 0.85);
+    }
+
+    div::-webkit-scrollbar-thumb {
+        background: var(--color-gray-500);
+    }
+
+    div::-webkit-scrollbar-thumb:hover {
+        background: var(--color-gray-600);
+    }
+</style>

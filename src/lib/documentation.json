@@ -6,22 +6,25 @@
                 "title": "Adding Contents",
                 "slug": "adding-contents",
                 "contents": [
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis.",
+                    "Adding content to Simpledocs involves structuring and organizing information in a clear and accessible manner. This ensures that documentation remains easy to navigate and understand. Simpledocs uses a single JSON file located at <code>$lib/documentation.json</code> to store and manage all page contents, allowing for seamless updates, structured data handling, and efficient content retrieval.",
                     {
                         "type": "section-title",
                         "value": "Basic Concept"
                     },
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis.",
+                    "The JSON file follows a structured format that organizes documentation pages into sections and paragraphs. The JSON is structured as an array of objects, where each object represents a category that has a documentation page or more. Each page contains sections, and each section consists of paragraphs. Here’s an example structure, as can be seen below.",
                     {
                         "type": "code",
                         "value": "[\n{\n\"name\": \"Category Name\",\n\"pages\": [\n{\n\"title\": \"Page Name\",\n\"slug\": \"page-slug\",\n\"contents\": []\n}\n]\n}\n]"
                     },
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
+                    "In Simpledocs, the JSON structure organizes documentation into categories, pages, and contents for a clear and structured navigation system. The top level is an array where each object represents a category, acting as a container for related pages. The <code>name</code> property defines the category title, which helps in grouping documentation topics logically.",
+                    "Each category contains a <code>pages</code> array that holds individual documentation pages. Every page has a <code>title</code> for display, a <code>slug</code> for unique identification in URLs, and a <code>contents</code> array that stores all structured information for that page. The <code>contents</code> array will later hold sections, paragraphs, or other content elements that make up the documentation. This structured approach ensures easy content management, making it simple to organize, retrieve, and update documentation.",
+                    "Now, let's try to add a paragraph to the example page.",
                     {
                         "type": "code",
                         "value": "[\n{\n\"name\": \"Category Name\",\n\"pages\": [\n{\n\"title\": \"Page Name\",\n\"slug\": \"page-slug\",\n\"contents\": [\n\"Here goes a paragraph content.\"\n]\n}\n]\n}\n]"
                     },
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
+                    "In the structure above, the page now contains a single paragraph. To add more paragraphs, simply append additional strings to the array. This keeps the documentation flexible and easy to update without modifying the overall structure.",
+                    "Now how about adding a page section? By adding a page section, it can help us in grouping and organizing different contexts inside a page. So let’s try adding one, followed by another paragraph.",
                     {
                         "type": "code",
                         "value": "[\n{\n\"name\": \"Category Name\",\n\"pages\": [\n{\n\"title\": \"Page Name\",\n\"slug\": \"page-slug\",\n\"contents\": [\n\"Here goes a paragraph content.\",\n{\n\"type\": \"section-title\",\n\"value\": \"This is a Section Title\"\n},\n\"Here goes the second paragraph.\"\n]\n}\n]\n}\n]"
@@ -29,83 +32,82 @@
                     {
                         "type": "paragraph",
                         "value": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!"
-                    }
+                    },
+                    "Notice that a page section is not a string but an object. This object consists of <code>type</code> and <code>value</code>, which define its type as a section title and what text it will display on the page. We will discover more variations of these types in the next parts."
                 ]
             },
             {
                 "title": "Code Snippet",
                 "slug": "code-snippet",
                 "contents": [
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis.",
+                    "Code snippets allow documentation to include properly formatted code examples. This element is essential for providing clear instructions, demonstrating syntax, or showcasing implementations. Instead of adding raw code as plain text, snippets are structured JSON that ensure proper rendering and formatting.",
                     {
                         "type": "section-title",
                         "value": "Example"
                     },
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
+                    "Each snippet is stored as an object inside the <code>contents</code> array of a page. The object must have a <code>type</code> property set to <code>code</code> and a <code>value</code> property containing the actual code as a string. This approach keeps content structured and ensures consistency in how code is displayed.",
                     {
                         "type": "code",
                         "value": "{\n\"type\": \"code\",\n\"value\": \"<stringified JSON>\"\n}"
-                    }
+                    },
+                    "The <code>value</code> field stores the JSON code as a string, which will be converted back into a JSON object when rendered. To prevent errors, ensure the stringified JSON is properly formatted and valid. This includes escaping special characters, maintaining correct syntax, and verifying that the structure remains intact when parsed."
                 ]
             },
             {
                 "title": "Download Button",
                 "slug": "download-button",
                 "contents": [
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis.",
+                    "A download button provides a way to link files for users to download directly from the documentation. This can be useful for sharing resources such as PDFs, software packages, templates, or any other downloadable content. Instead of manually adding links, the button is structured as an object to maintain consistency and ease of customization.",
                     {
                         "type": "section-title",
                         "value": "Example"
                     },
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
+                    "Each download button is stored as an object inside the <code>contents</code> array of a page. The object must have a <code>type</code> property, a <code>label</code> that defines the button text, and a <code>target</code> that specifies the file path or URL.",
+                    "Different variations of the download button can be used to indicate the nature of the provided file. The <code>type</code> property supports multiple values for styling and context. Using <code>download</code> creates a standard button, while <code>download-info</code>, <code>download-success</code>, <code>download-warning</code>, and <code>download-danger</code> apply different visual styles to convey additional meaning. These variations help users distinguish between general downloads, informational resources, successful actions, warnings, or potentially critical files.",
                     {
                         "type": "download",
                         "label": "Download Example",
-                        "target": "/docs/plants.jpg"
+                        "target": "/docs/bridge.webp"
                     },
                     {
                         "type": "code",
                         "value": "{\n\"type\": \"download\",\n\"label\": \"<label for download button>\",\n\"target\": \"<path to file>\"\n}"
                     },
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "download-info",
                         "label": "Download Example",
-                        "target": "/docs/plants.jpg"
+                        "target": "/docs/bridge.webp"
                     },
                     {
                         "type": "code",
-                        "value": "{\n\"type\": \"download-info\",\n\"label\": \"<label for download button>\",\n\"target\": \"<path to file>\"\n}"
+                        "value": "{\n\"type\": \"download-info\",\n\"label\": \"<label for download-info button>\",\n\"target\": \"<path to file>\"\n}"
                     },
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "download-success",
                         "label": "Download Example",
-                        "target": "/docs/plants.jpg"
+                        "target": "/docs/bridge.webp"
                     },
                     {
                         "type": "code",
-                        "value": "{\n\"type\": \"download-success\",\n\"label\": \"<label for download button>\",\n\"target\": \"<path to file>\"\n}"
+                        "value": "{\n\"type\": \"download-success\",\n\"label\": \"<label for download-success button>\",\n\"target\": \"<path to file>\"\n}"
                     },
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "download-warning",
                         "label": "Download Example",
-                        "target": "/docs/plants.jpg"
+                        "target": "/docs/bridge.webp"
                     },
                     {
                         "type": "code",
-                        "value": "{\n\"type\": \"download-warning\",\n\"label\": \"<label for download button>\",\n\"target\": \"<path to file>\"\n}"
+                        "value": "{\n\"type\": \"download-warning\",\n\"label\": \"<label for download-warning button>\",\n\"target\": \"<path to file>\"\n}"
                     },
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "download-danger",
                         "label": "Download Example",
-                        "target": "/docs/plants.jpg"
+                        "target": "/docs/bridge.webp"
                     },
                     {
                         "type": "code",
-                        "value": "{\n\"type\": \"download-danger\",\n\"label\": \"<label for download button>\",\n\"target\": \"<path to file>\"\n}"
+                        "value": "{\n\"type\": \"download-danger\",\n\"label\": \"<label for download-danger button>\",\n\"target\": \"<path to file>\"\n}"
                     }
                 ]
             },
@@ -113,12 +115,13 @@
                 "title": "Important Alert",
                 "slug": "important-alert",
                 "contents": [
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis.",
+                    "Alerts highlight important information within the documentation. They can be used to display warnings, tips, or critical notices that require user attention. Instead of manually formatting alerts, they are structured as objects just like other elements for consistency and proper styling.",
                     {
                         "type": "section-title",
                         "value": "Example"
                     },
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
+                    "Each alert is stored as an object inside the <code>contents</code> array of a page. The object must have a <code>type</code> property set to <code>alert</code> and a <code>value</code> property containing the message to display. This ensures a clear and structured presentation of important information.",
+                    "Alerts support multiple variations to convey different levels of importance. The <code>type</code> property can be set to <code>alert</code> for a standard message or modified to <code>alert-info</code>, <code>alert-success</code>, <code>alert-warning</code>, or <code>alert-danger</code> for different visual styles. These variations help distinguish between general information, confirmations, cautionary notes, and critical warnings, ensuring that messages are clear and appropriately emphasized.",
                     {
                         "type": "alert",
                         "value": "Show some information here..."
@@ -127,7 +130,6 @@
                         "type": "code",
                         "value": "{\n\"type\": \"alert\",\n\"value\": \"<some informative text>\"\n}"
                     },
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "alert-info",
                         "value": "Show some information here..."
@@ -136,7 +138,6 @@
                         "type": "code",
                         "value": "{\n\"type\": \"alert-info\",\n\"value\": \"<some informative text>\"\n}"
                     },
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "alert-success",
                         "value": "Show some information here..."
@@ -145,7 +146,6 @@
                         "type": "code",
                         "value": "{\n\"type\": \"alert-success\",\n\"value\": \"<some informative text>\"\n}"
                     },
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "alert-warning",
                         "value": "Show some information here..."
@@ -154,7 +154,6 @@
                         "type": "code",
                         "value": "{\n\"type\": \"alert-warning\",\n\"value\": \"<some informative text>\"\n}"
                     },
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
                     {
                         "type": "alert-danger",
                         "value": "Show some information here..."
@@ -169,12 +168,12 @@
                 "title": "Hyperlink",
                 "slug": "hyperlink",
                 "contents": [
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis.",
+                    "Hyperlinks allow users to navigate to external websites or related resources, improving connectivity and accessibility. Well-placed links help users find relevant information without unnecessary searching. A consistent linking approach improves readability and maintainability, ensuring a seamless user experience. Properly labeled links also enhance accessibility by providing clear context about the destination.",
                     {
                         "type": "section-title",
                         "value": "Example"
                     },
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
+                    "A hyperlink is added as an object inside the <code>contents</code> array. It requires a <code>type</code> set to <code>hyperlink</code>, a <code>label</code> for the title of the hyperlink element, and a <code>target</code> for the destination URL. Make sure the URL is correct to avoid broken links and preserve a good user experience.",
                     {
                         "type": "hyperlink",
                         "label": "Faizal Chan's Website",
@@ -195,56 +194,57 @@
                 "title": "Image",
                 "slug": "image",
                 "contents": [
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis.",
+                    "Images can be embedded to illustrate concepts, provide visual references, or serve any other purpose to enhance documentation. They can be used to display diagrams, screenshots, or any other visual content that helps clarify information. Instead of embedding raw image links directly into the content, images are structured as objects, allowing for additional customization such as setting width or background color. This ensures consistency in how images appear across different pages.",
                     {
                         "type": "section-title",
                         "value": "Example"
                     },
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
+                    "To add an image, an object must be placed inside the <code>contents</code> array of a page. The object requires a <code>type</code> property set to <code>image</code>, a <code>title</code> that serves as an accessible label, and a <code>target</code> that defines the file path or URL of the image.",
                     {
                         "type": "image",
-                        "title": "Plants image",
-                        "target": "/docs/plants.jpg"
+                        "title": "Bridge image",
+                        "target": "/docs/bridge.webp"
                     },
                     {
                         "type": "code",
                         "value": "{\n\"type\": \"image\",\n\"title\": \"<image title>\",\n\"target\": \"<path to image file>\"\n}"
                     },
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
+                    "Additional properties can be included to customize how the image is displayed. If the image needs a specific size, the optional <code>width</code> property can be added. This gives control over its dimensions, ensuring it fits well within the content layout without being too large or too small. The maximum width of an image will not exceed the page width, preventing layout issues or overflow.",
                     {
                         "type": "image",
-                        "title": "Plants image",
-                        "target": "/docs/plants.jpg",
+                        "title": "Bridge image",
+                        "target": "/docs/bridge.webp",
                         "width": "450px"
                     },
                     {
                         "type": "code",
                         "value": "{\n\"type\": \"image\",\n\"title\": \"<image title>\",\n\"target\": \"<path to image file>\",\n\"width\": \"<custom image width>\"\n}"
                     },
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
+                    "For further customization, a <code>background</code> property can be included to apply a background color (e.g. <code>#ffffff</code>) behind the image. This is useful when an image has transparency or requires a specific background to stand out against the page.",
                     {
                         "type": "image",
-                        "title": "Plants image",
-                        "target": "/docs/plants.jpg",
+                        "title": "Bridge image",
+                        "target": "/docs/bridge.webp",
                         "background": "#ffffff",
                         "width": "450px"
                     },
                     {
                         "type": "code",
                         "value": "{\n\"type\": \"image\",\n\"title\": \"<image title>\",\n\"target\": \"<path to image file>\",\n\"background\": \"<background color code>\",\n\"width\": \"<custom image width>\"\n}"
-                    }
+                    },
+                    "By combining these properties, images can be displayed in a way that best fits the documentation’s design and readability. Properly formatted image objects ensure that visuals remain clear, accessible, and consistent across different sections."
                 ]
             },
             {
                 "title": "Audio",
                 "slug": "audio",
                 "contents": [
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis.",
+                    "Audio files can be embedded to provide spoken explanations, sound effects, or other auditory content. For example, a tutorial on musical software could include sample sounds for each feature, while a language-learning guide could provide pronunciation clips. Embedding audio can also improve accessibility by offering spoken versions of text content for visually impaired users.",
                     {
                         "type": "section-title",
                         "value": "Example"
                     },
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
+                    "To include an audio file, an entry should be placed inside the <code>contents</code> array. It requires a <code>type</code> set to <code>audio</code> and a <code>target</code> that specifies the file path or URL of the audio source.",
                     {
                         "type": "audio",
                         "target": "https://static.mf-chan.com/dummy/casa_rosa-pienso_viento.mp3"
@@ -259,12 +259,12 @@
                 "title": "Video",
                 "slug": "video",
                 "contents": [
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis.",
+                    "Videos can be embedded to provide demonstrations, tutorials, or visual explanations. They help convey complex ideas more effectively by showing concepts in action rather than just describing them with text. Both locally hosted video files and YouTube embeds are supported.",
                     {
                         "type": "section-title",
                         "value": "Example"
                     },
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
+                    "To embed a common video file, an entry should be placed inside the <code>contents</code> array. It requires a <code>type</code> set to <code>video</code> and a <code>target</code> that specify the file path or URL of the video.",
                     {
                         "type": "video",
                         "target": "https://static.mf-chan.com/dummy/copyrightcloud-nature.mp4"
@@ -273,7 +273,7 @@
                         "type": "code",
                         "value": "{\n\"type\": \"video\",\n\"target\": \"<path to video file>\"\n}"
                     },
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
+                    "For embedding a YouTube video, the <code>type</code> should be set to <code>video-youtube</code> and the <code>target</code> must be a valid YouTube embed URL.",
                     {
                         "type": "video-youtube",
                         "target": "https://www.youtube.com/embed/cHBqwj0Ed_I?si=a7QK9B_pPqYsBjUC"
@@ -288,12 +288,12 @@
                 "title": "PDF Preview",
                 "slug": "pdf-preview",
                 "contents": [
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis.",
+                    "PDF files can be embedded for direct viewing, allowing users to read documents without needing to download them. This is useful for displaying reports, guides, manuals, whitepapers, or any other material that benefits from being accessible within the page. Embedded PDFs ensure that formatting remains intact across devices. This approach improves usability by keeping content within the site, reducing interruptions caused by external downloads.",
                     {
                         "type": "section-title",
                         "value": "Example"
                     },
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
+                    "To embed a PDF, an entry should be added inside the <code>contents</code> array. It requires a <code>type</code> set to <code>pdf</code> and a <code>target</code> that specifies the file path or URL of the document.",
                     {
                         "type": "pdf",
                         "target": "/docs/paper.pdf"
@@ -308,12 +308,12 @@
                 "title": "Google Maps",
                 "slug": "google-maps",
                 "contents": [
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur! Sit rerum, distinctio nulla ipsa est possimus! Possimus nesciunt, repudiandae ullam enim nam facere. Laudantium, recusandae! Nemo consequatur reprehenderit in quia illum, facilis rem libero exercitationem similique voluptatibus ratione saepe sapiente reiciendis molestias fuga, sit quasi ad aliquid quos omnis.",
+                    "Google Maps can be embedded to display locations, provide directions, or highlight points of interest without requiring users to leave the page. This is useful for contact pages, event locations, store locators, or travel guides where visual maps enhance understanding. Users can zoom, pan, and interact with the map to explore areas in detail. Embedding a map streamlines navigation by allowing visitors to get directions instantly, improving accessibility and user experience.",
                     {
                         "type": "section-title",
                         "value": "Example"
                     },
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis neque voluptatum repudiandae hic dolore tenetur rem atque aliquam sint deleniti quod, veniam amet, nemo iusto excepturi velit eum? Aut, magni praesentium totam eos maiores accusamus nihil a pariatur!",
+                    "To embed a Google Map, an entry should be placed inside the <code>contents</code> array. It requires a <code>type</code> set to <code>maps</code> and a <code>target</code> that specifies the Google Maps embed URL.",
                     {
                         "type": "maps",
                         "target": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9007508209093!2d107.61612687492338!3d-6.902471493096827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e64c5e8866e5%3A0x37be7ac9d575f7ed!2sGedung%20Sate!5e0!3m2!1sen!2sid!4v1741356033484!5m2!1sen!2sid"

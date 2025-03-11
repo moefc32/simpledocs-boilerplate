@@ -50,6 +50,7 @@
         item.type
     ]} transition duration-150 ease-in-out rounded-lg cursor-pointer"
     disabled={isDownloading}
+    title={item.label}
     on:click={() => downloadFile(item.target)}
 >
     <Download size={16} />

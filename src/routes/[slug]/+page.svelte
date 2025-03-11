@@ -33,7 +33,7 @@
     </h1>
     {#each contents as item, i}
         {#if typeof item === 'string'}
-            <p>{item}</p>
+            <p>{@html item}</p>
         {:else if item.type === 'section-title'}
             <h2 class="my-3 text-3xl">{item.value}</h2>
         {:else if item.type === 'code'}

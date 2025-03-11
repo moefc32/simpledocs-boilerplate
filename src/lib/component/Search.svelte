@@ -70,15 +70,15 @@
 </script>
 
 <div class="flex items-center text-sm relative">
-    <span class="flex justify-center text-gray-500 w-10">
+    <span class="flex justify-center text-gray-500 w-11">
         <Search size={16} />
     </span>
     <input
         bind:this={searchInput}
         type="search"
-        class="ps-8 {isSearchInputActive
-            ? 'me-0'
-            : '-me-18'} w-full -ms-10 md:w-[280px] h-[40px] border-[1px] border-gray-600 rounded-lg"
+        class="ps-10 {isSearchInputActive
+            ? 'me-0 pe-4'
+            : '-me-18 pe-22'} w-full -ms-11 md:w-[280px] h-[40px] border-[1px] border-gray-600 rounded-lg"
         placeholder="Search..."
         on:input={handleKeydown}
         bind:value={searchKeyword}

@@ -132,6 +132,12 @@
         font-family: var(--font-display);
     }
 
+    p code {
+        padding: 0 .25rem;
+        background: var(--color-gray-600);
+        font-size: .9rem;
+    }
+
     ::selection {
         background: #fdffa4;
         color: black;

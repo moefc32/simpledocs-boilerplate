@@ -1,6 +1,6 @@
 <script>
     import { base } from '$app/paths';
-    import { BookOpen, Menu } from 'lucide-svelte';
+    import { Menu } from 'lucide-svelte';
 
     import sidebarToggle from './stores/sidebarToggle';
     import Search from './Search.svelte';
@@ -13,10 +13,9 @@
 >
     <a
         href={base}
-        class="flex items-center gap-2 me-auto text-[1.35rem]"
+        class="flex items-center gap-2 me-auto text-[1.4rem]"
         on:click={() => sidebarToggle.set(false)}
     >
-        <BookOpen size={24} />
         <span
             class="truncate max-w-[calc(100vw-150px)] md:max-w-[calc(100vw-400px)] overflow-hidden"
         >
