@@ -45,9 +45,9 @@
     }
 
     onMount(() => {
-        window.addEventListener('keydown', evt => {
-            if (evt.ctrlKey && evt.key === 'k') {
-                evt.preventDefault();
+        window.addEventListener('keydown', event => {
+            if (event.ctrlKey && event.key === 'k') {
+                event.preventDefault();
                 searchInput?.focus();
             }
         });
