@@ -8,18 +8,18 @@
 	
 		<link href="./_app/immutable/assets/0.Diy17ue1.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/3.6SIb-eGx.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.C0Mm9isb.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/KF-0BR3n.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.BvutLInQ.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Cx0Fpqtj.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/B1iluEif.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/BWOpdrFl.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.BS2djNlc.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.Df2osBbb.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/Bol9LUmm.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/DqLnS_vj.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.B43AWoWK.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.Cel5GLPw.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/11qMpu-4.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/P7Yj9IKM.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/5t63bPOh.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/3.NCykSR3Z.js"><!--[--><meta property="og:site_name" content="Simpledocs Boilerplate"> <meta property="og:type" content="website"> <meta property="og:description" content="Simpledocs"><!--]--><!--[--><meta property="og:title" content="Video | Simpledocs Boilerplate"><!--]--><title>Video | Simpledocs Boilerplate</title>
+		<link rel="modulepreload" href="./_app/immutable/nodes/3.CGrvXgsN.js"><!--[--><meta property="og:site_name" content="Simpledocs Boilerplate"> <meta property="og:type" content="website"> <meta property="og:description" content="Simpledocs"><!--]--><!--[--><meta property="og:title" content="Video | Simpledocs Boilerplate"><!--]--><title>Video | Simpledocs Boilerplate</title>
 </head>
 
 <body class="flex flex-col w-full min-h-screen" data-sveltekit-preload-data="hover">
@@ -27,7 +27,7 @@
 			
 			<script>
 				{
-					__sveltekit_jht57f = {
+					__sveltekit_13v0kmv = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						assets: "/simpledocs-boilerplate"
 					};
@@ -35,12 +35,12 @@
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("./_app/immutable/entry/start.C0Mm9isb.js"),
-						import("./_app/immutable/entry/app.BS2djNlc.js")
+						import("./_app/immutable/entry/start.BvutLInQ.js"),
+						import("./_app/immutable/entry/app.Df2osBbb.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 3],
-							data: [null,{"type":"data","data":{title:"Video",slug:"video",contents:["Videos can be embedded to provide demonstrations, tutorials, or visual explanations. They help convey complex ideas more effectively by showing concepts in action rather than just describing them with text. Both locally hosted video files and YouTube embeds are supported.",{type:"section-title",value:"Example"},"To embed a common video file, an entry should be placed inside the \u003Ccode>contents\u003C/code> array. It requires a \u003Ccode>type\u003C/code> set to \u003Ccode>video\u003C/code> and a \u003Ccode>target\u003C/code> that specify the file path or URL of the video.",{type:"video",target:"https://static.mf-chan.com/dummy/copyrightcloud-nature.mp4"},{type:"code",value:"{\n\"type\": \"video\",\n\"target\": \"\u003Cpath to video file>\"\n}"},"For embedding a YouTube video, the \u003Ccode>type\u003C/code> should be set to \u003Ccode>video-youtube\u003C/code> and the \u003Ccode>target\u003C/code> must be a valid YouTube embed URL.",{type:"video-youtube",target:"https://www.youtube.com/embed/cHBqwj0Ed_I?si=a7QK9B_pPqYsBjUC"},{type:"code",value:"{\n\"type\": \"video-youtube\",\n\"target\": \"\u003CYouTube video embed URL>\"\n}"}],previousPage:{title:"Audio",slug:"audio",contents:["Audio files can be embedded to provide spoken explanations, sound effects, or other auditory content. For example, a tutorial on musical software could include sample sounds for each feature, while a language-learning guide could provide pronunciation clips. Embedding audio can also improve accessibility by offering spoken versions of text content for visually impaired users.",{type:"section-title",value:"Example"},"To include an audio file, an entry should be placed inside the \u003Ccode>contents\u003C/code> array. It requires a \u003Ccode>type\u003C/code> set to \u003Ccode>audio\u003C/code> and a \u003Ccode>target\u003C/code> that specifies the file path or URL of the audio source.",{type:"audio",target:"https://static.mf-chan.com/dummy/casa_rosa-pienso_viento.mp3"},{type:"code",value:"{\n\"type\": \"audio\",\n\"target\": \"\u003Cpath to audio file>\"\n}"}]},nextPage:{title:"PDF Preview",slug:"pdf-preview",contents:["PDF files can be embedded for direct viewing, allowing users to read documents without needing to download them. This is useful for displaying reports, guides, manuals, whitepapers, or any other material that benefits from being accessible within the page. Embedded PDFs ensure that formatting remains intact across devices. This approach improves usability by keeping content within the site, reducing interruptions caused by external downloads.",{type:"section-title",value:"Example"},"To embed a PDF, an entry should be added inside the \u003Ccode>contents\u003C/code> array. It requires a \u003Ccode>type\u003C/code> set to \u003Ccode>pdf\u003C/code> and a \u003Ccode>target\u003C/code> that specifies the file path or URL of the document.",{type:"pdf",target:"/docs/paper.pdf"},{type:"code",value:"{\n\"type\": \"pdf\",\n\"target\": \"\u003Cpath to PDF file>\"\n}"}]}},"uses":{"params":["slug"]}}],
+							data: [null,{"type":"data","data":{title:"Video",slug:"video",contents:["Videos can be embedded to provide demonstrations, tutorials, or visual explanations. They help convey complex ideas more effectively by showing concepts in action rather than just describing them with text. Both locally hosted video files and YouTube embeds are supported.",{type:"section-title",value:"Example"},"To embed a common video file, an entry should be placed inside the \u003Ccode>contents\u003C/code> array. It requires a \u003Ccode>type\u003C/code> set to \u003Ccode>video\u003C/code> and a \u003Ccode>target\u003C/code> that specify the file path or URL of the video.",{type:"video",target:"https://static.mf-chan.com/dummy/copyrightcloud-nature.mp4"},{type:"code",value:"{\n\"type\": \"video\",\n\"target\": \"\u003Cpath to video file>\"\n}"},"For embedding a YouTube video, the \u003Ccode>type\u003C/code> should be set to \u003Ccode>video-youtube\u003C/code> and the \u003Ccode>target\u003C/code> must be a valid YouTube embed URL.",{type:"video-youtube",target:"https://www.youtube.com/embed/cHBqwj0Ed_I?si=a7QK9B_pPqYsBjUC"},{type:"code",value:"{\n\"type\": \"video-youtube\",\n\"target\": \"\u003CYouTube video embed URL>\"\n}"}],previousPage:{title:"Audio",slug:"audio",contents:["Audio files can be embedded to provide spoken explanations, sound effects, or other auditory content. For example, a tutorial on musical software could include sample sounds for each feature, while a language-learning guide could provide pronunciation clips. Embedding audio can also improve accessibility by offering spoken versions of text content for visually impaired users.",{type:"section-title",value:"Example"},"To include an audio file, an entry should be placed inside the \u003Ccode>contents\u003C/code> array. It requires a \u003Ccode>type\u003C/code> set to \u003Ccode>audio\u003C/code> and a \u003Ccode>target\u003C/code> that specifies the file path or URL of the audio source.",{type:"audio",target:"https://static.mf-chan.com/dummy/casa_rosa-pienso_viento.mp3"},{type:"code",value:"{\n\"type\": \"audio\",\n\"target\": \"\u003Cpath to audio file>\"\n}"}]},nextPage:{title:"PDF Preview",slug:"pdf-preview",contents:["PDF files can be embedded for direct viewing, allowing users to read documents without needing to download them. This is useful for displaying reports, guides, manuals, whitepapers, or any other material that benefits from being accessible within the page. Embedded PDFs ensure that formatting remains intact across devices. This approach improves usability by keeping content within the site, reducing interruptions caused by external downloads.",{type:"section-title",value:"Example"},"To embed a PDF, an entry should be added inside the \u003Ccode>contents\u003C/code> array. It requires a \u003Ccode>type\u003C/code> set to \u003Ccode>pdf\u003C/code> and a \u003Ccode>target\u003C/code> that specifies the file path or URL of the document.",{type:"pdf",target:"/docs/paper"},{type:"code",value:"{\n\"type\": \"pdf\",\n\"target\": \"\u003Cpath to PDF file>\"\n}"}]}},"uses":{"params":["slug"]}}],
 							form: null,
 							error: null
 						});
