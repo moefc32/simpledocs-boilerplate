@@ -296,7 +296,7 @@
                     "To embed a PDF, an entry should be added inside the <code>contents</code> array. It requires a <code>type</code> set to <code>pdf</code> and a <code>target</code> that specifies the file path or URL of the document.",
                     {
                         "type": "pdf",
-                        "target": "/docs/paper.pdf"
+                        "target": "/docs/paper"
                     },
                     {
                         "type": "code",

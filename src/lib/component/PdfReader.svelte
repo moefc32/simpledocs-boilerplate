@@ -17,7 +17,14 @@
             ? `${import.meta.env.VITE_BASE_PATH || ''}${target}`
             : target;
 
-        const loadingTask = pdfjsLib.getDocument(fileUrl);
+        const response = await fetch(fileUrl, {
+            headers: { 'X-Requested-With': 'XMLHttpRequest' },
+        });
+        const blob = await response.blob();
+        const pdfBlobUrl = URL.createObjectURL(
+            new Blob([blob], { type: 'application/pdf' }),
+        );
+        const loadingTask = pdfjsLib.getDocument(pdfBlobUrl);
         const pdf = await loadingTask.promise;
 
         container.innerHTML = '';
