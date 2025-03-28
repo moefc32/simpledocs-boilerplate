@@ -54,6 +54,47 @@
                 ]
             },
             {
+                "title": "Color Blocks",
+                "slug": "color-blocks",
+                "contents": [
+                    "Color blocks enable users to view a color palette, typically associated with a brand's visual identity. Each color is labeled with a semantic name for easy reference. This helps maintain consistency across designs and ensures accurate color usage. Additionally, color blocks display the corresponding values, providing a precise representation of each color.",
+                    {
+                        "type": "section-title",
+                        "value": "Example"
+                    },
+                    "A color block is added as an object inside the <code>contents</code> array. It requires a <code>type</code> set to <code>color-blocks</code> and an <code>items</code> array containing all the colors in the palette. Each item includes a <code>label</code> for the color's semantic name, a <code>blockColor</code> for the color value, and a <code>textColor</code> to define the displayed text color.",
+                    {
+                        "type": "color-blocks",
+                        "items": [
+                            {
+                                "label": "Soda Pop",
+                                "blockColor": "#74b5ec",
+                                "textColor": "#000000"
+                            },
+                            {
+                                "label": "Lime Fizz",
+                                "blockColor": "#98ca5e",
+                                "textColor": "#000000"
+                            },
+                            {
+                                "label": "Lemon Drop",
+                                "blockColor": "#ffda66",
+                                "textColor": "#000000"
+                            },
+                            {
+                                "label": "Cherry Pop",
+                                "blockColor": "#ee7c84",
+                                "textColor": "#000000"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "code",
+                        "value": "{\n\"type\": \"color-blocks\",\n\"items\": [\n{\n\"label\": \"<color's semantic name>\",\n\"blockColor\": \"<color's code>\",\n\"textColor\": \"<text color code>\"\n}\n]\n}"
+                    }
+                ]
+            },
+            {
                 "title": "Download Button",
                 "slug": "download-button",
                 "contents": [

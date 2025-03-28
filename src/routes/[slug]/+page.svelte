@@ -1,5 +1,6 @@
 <script>
     import Code from '$lib/component/Code.svelte';
+    import ColorBlocks from '$lib/component/ColorBlocks.svelte';
     import DownloadButton from '$lib/component/DownloadButton.svelte';
     import Alert from '$lib/component/Alert.svelte';
     import Hyperlink from '$lib/component/Hyperlink.svelte';
@@ -38,6 +39,8 @@
             <h2 class="my-3 text-3xl">{item.value}</h2>
         {:else if item.type === 'code'}
             <Code value={item.value} />
+        {:else if item.type === 'color-blocks'}
+            <ColorBlocks {item} />
         {:else if item.type.startsWith('download')}
             <DownloadButton {item} />
         {:else if item.type.startsWith('alert')}
