@@ -10,6 +10,7 @@ Boilerplate for Simpledocs, a dead simple documentation site
 - Access the search box with a hotkey to search for documentation
 - Responsive design for use on both desktop and mobile devices
 - Predefined elements and embeddables, preserving consistency
+- Service worker enabled for faster page access
 
 ## Stack Used
 - [SvelteKit](https://svelte.dev/)
