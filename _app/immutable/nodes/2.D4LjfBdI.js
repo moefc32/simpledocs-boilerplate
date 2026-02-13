@@ -1,8 +1,0 @@
-import"../chunks/Bzak7iHL.js";import{i as m}from"../chunks/CuuK_G7L.js";import{p as h,f as n,h as g,t as s,a as i,b as f,$ as u,c as o,r,n as x,s as b}from"../chunks/Bp7gmpXD.js";import{s as y}from"../chunks/hS5PVg1h.js";var v=n('<meta property="og:title"/>'),w=n(`<div class="flex flex-1 flex-col gap-3"><h1 class="my-3 pb-3 text-5xl border-b-[1px] border-gray-700"> </h1> <p><span class="inline-flex gap-2"><a href="https://opensource.org/license/mit" target="_blank"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" class="h-[24px]"/></a> <a href="https://pnpm.io/" target="_blank"><img src="https://img.shields.io/badge/Package-PNPM-orange?style=flat-square" class="h-[24px]"/></a> <img src="https://img.shields.io/badge/Module-ECMAScript-yellow?style=flat-square" class="h-[24px]"/></span></p> <p>Simpledocs is a minimalistic and efficient documentation site designed
-        for designers, developers, and teams who need a quick and organized way
-        to present their documentation. It offers a clean and responsive layout
-        with essential features like a navigation sidebar and search
-        functionality. Built with simplicity in mind, this project ensures that
-        users can focus on writing content without dealing with complex
-        configurations. Its lightweight nature makes it easy to deploy on the
-        GitHub Pages.</p></div>`);function B(l,p){h(p,!1),m();var e=w();g(d=>{var a=v();s(()=>{u.title="Simpledocs Boilerplate",y(a,"content","Simpledocs Boilerplate")}),i(d,a)});var t=o(e),c=o(t,!0);r(t),x(4),r(e),s(()=>b(c,"Simpledocs Boilerplate")),i(l,e),f()}export{B as component};
