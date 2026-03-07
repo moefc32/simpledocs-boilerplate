@@ -22,7 +22,7 @@
     <img
         src={imageUrl}
         alt={item.title}
-        class="w-full border-[1px] border-gray-700 rounded-sm"
+        class="w-full border-1 border-gray-700 rounded-sm"
         style="max-width: {item?.width ? `min(${item.width}, 100%)` : '100%'};"
         title={item.title || 'Image'}
     />

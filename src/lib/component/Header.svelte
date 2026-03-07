@@ -26,7 +26,7 @@
         <Search {searchSource} />
     </div>
     <button
-        class="md:hidden px-3 h-[40px] border-[1px] border-gray-700 rounded-sm cursor-pointer"
+        class="md:hidden px-3 h-[40px] border-1 border-gray-700 rounded-sm cursor-pointer"
         on:click={() => sidebarToggle.set(!$sidebarToggle)}
     >
         <Menu />

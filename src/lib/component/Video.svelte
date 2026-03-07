@@ -9,7 +9,7 @@
 {#if item.type === 'video-youtube'}
     <iframe
         src={videoUrl + '?mute=0&rel=0&modestbranding=1'}
-        class="w-full aspect-video border-[1px] border-gray-700 rounded-sm"
+        class="w-full aspect-video border-1 border-gray-700 rounded-sm"
         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
@@ -17,7 +17,7 @@
     ></iframe>
 {:else}
     <video
-        class="w-full aspect-video border-[1px] border-gray-700 rounded-sm"
+        class="w-full aspect-video border-1 border-gray-700 rounded-sm"
         controls
     >
         <source src={videoUrl} type="video/mp4" />

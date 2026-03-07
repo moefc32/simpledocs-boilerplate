@@ -64,7 +64,7 @@
             {#if previousPage}
                 <a
                     href={previousPage.slug}
-                    class="flex items-center gap-2 px-4 py-3 hover:bg-gray-700/50 transition duration-150 ease-in-out border-[1px] border-gray-700 rounded-lg"
+                    class="flex items-center gap-2 px-4 py-3 hover:bg-gray-700/50 transition duration-150 ease-in-out border-1 border-gray-700 rounded-lg"
                     title="Navigate to previous page"
                 >
                     <ChevronLeft size={16} />
@@ -76,7 +76,7 @@
             {#if nextPage}
                 <a
                     href={nextPage.slug}
-                    class="flex items-center gap-2 px-4 py-3 hover:bg-gray-700/50 transition duration-150 ease-in-out border-[1px] border-gray-700 rounded-lg"
+                    class="flex items-center gap-2 px-4 py-3 hover:bg-gray-700/50 transition duration-150 ease-in-out border-1 border-gray-700 rounded-lg"
                     title="Navigate to next page"
                 >
                     <span class="text-sm">{nextPage.title}</span>

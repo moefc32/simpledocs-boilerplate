@@ -78,7 +78,7 @@
         type="search"
         class="ps-10 {isSearchInputActive
             ? 'me-0 pe-4'
-            : '-me-18 pe-22'} w-full -ms-11 md:w-[280px] h-[40px] border-[1px] border-gray-600 rounded-lg"
+            : '-me-18 pe-22'} w-full -ms-11 md:w-[280px] h-[40px] border-1 border-gray-600 rounded-lg"
         placeholder="Search..."
         on:input={handleKeydown}
         bind:value={searchKeyword}
@@ -90,7 +90,7 @@
     {/if}
     {#if searchResult.length && isSearchInputActive}
         <div
-            class="search-dropdown flex flex-col gap-1 p-2 bg-slate-800 w-full md:w-[280px] border-[1px] border-gray-600 rounded-lg shadow-xl absolute z-[100] top-[45px] md:top-[60px] right-0"
+            class="search-dropdown flex flex-col gap-1 p-2 bg-slate-800 w-full md:w-[280px] border-1 border-gray-600 rounded-lg shadow-xl absolute z-[100] top-[45px] md:top-[60px] right-0"
         >
             {#each searchResult as item, i}
                 <a
