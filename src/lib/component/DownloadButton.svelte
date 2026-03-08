@@ -1,5 +1,6 @@
 <script>
     import { Download } from 'lucide-svelte';
+    import ky from 'ky';
 
     export let item;
 
@@ -23,11 +24,8 @@
                 ? `${import.meta.env.VITE_BASE_PATH || ''}${path}`
                 : path;
 
-            const response = await fetch(fileUrl);
-            if (!response.ok)
-                throw new Error(`Failed to fetch file: ${response.statusText}`);
+            const blob = await ky.get(fileUrl).blob();
 
-            const blob = await response.blob();
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
             link.download = fileUrl.split('/').pop();

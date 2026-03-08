@@ -2,8 +2,10 @@
     import { onMount } from 'svelte';
     import * as pdfjsLib from 'pdfjs-dist';
     import pdfWorker from 'pdfjs-dist/build/pdf.worker.min.mjs?url';
+    import ky from 'ky';
 
     export let target;
+    export let fitWidth = true;
 
     let container;
     let scale = 1.5;
@@ -17,40 +19,54 @@
             ? `${import.meta.env.VITE_BASE_PATH || ''}${target}`
             : target;
 
-        const response = await fetch(fileUrl, {
-            headers: { 'X-Requested-With': 'XMLHttpRequest' },
-        });
-        const blob = await response.blob();
-        const pdfBlobUrl = URL.createObjectURL(
-            new Blob([blob], { type: 'application/pdf' }),
-        );
-        const loadingTask = pdfjsLib.getDocument(pdfBlobUrl);
-        const pdf = await loadingTask.promise;
+        try {
+            const blob = await ky.get(fileUrl).blob();
+            const pdfBlobUrl = URL.createObjectURL(blob);
+            const loadingTask = pdfjsLib.getDocument(pdfBlobUrl);
+            const pdf = await loadingTask.promise;
 
-        container.innerHTML = '';
+            container.innerHTML = '';
 
-        const firstPage = await pdf.getPage(1);
-        const viewport = firstPage.getViewport({ scale: 1 });
-        const containerWidth = container.clientWidth;
-        scale = containerWidth / viewport.width;
+            const firstPage = await pdf.getPage(1);
+            const viewport = firstPage.getViewport({ scale: 1 });
 
-        for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
-            const page = await pdf.getPage(pageNum);
-            const viewport = page.getViewport({ scale });
+            if (fitWidth) {
+                const containerWidth = container.clientWidth;
+                scale = containerWidth / viewport.width;
+            } else {
+                const containerHeight = container.clientHeight;
+                scale = containerHeight / viewport.height;
+            }
 
-            const canvas = document.createElement('canvas');
-            canvas.width = viewport.width;
-            canvas.height = viewport.height;
-            container.appendChild(canvas);
+            for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+                const page = await pdf.getPage(pageNum);
+                const viewport = page.getViewport({ scale });
+                const canvas = document.createElement('canvas');
 
-            const context = canvas.getContext('2d');
-            await page.render({ canvasContext: context, viewport }).promise;
+                canvas.width = viewport.width;
+                canvas.height = viewport.height;
+
+                if (!fitWidth) {
+                    canvas.style.marginLeft = 'auto';
+                    canvas.style.marginRight = 'auto';
+                }
+
+                container.appendChild(canvas);
+
+                const context = canvas.getContext('2d');
+                await page.render({ canvasContext: context, viewport }).promise;
+            }
+
+            URL.revokeObjectURL(pdfBlobUrl);
+        } catch (e) {
+            console.error('PDF Render failed:', e);
         }
     }
 
     onMount(() => {
         renderPDF();
         window.addEventListener('resize', renderPDF);
+        return () => window.removeEventListener('resize', renderPDF);
     });
 </script>
 

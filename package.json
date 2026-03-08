@@ -33,6 +33,7 @@
         "@fontsource-variable/reddit-mono": "^5.2.8",
         "codemirror": "^6.0.2",
         "fuse.js": "^7.1.0",
+        "ky": "^1.14.3",
         "lucide-svelte": "^0.563.0",
         "pdfjs-dist": "^4.10.38"
     },
