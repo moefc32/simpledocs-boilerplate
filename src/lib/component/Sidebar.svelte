@@ -21,7 +21,7 @@
     </div>
     <nav class="flex flex-1 flex-col items-stretch gap-1">
         <a
-            href={base.replace(/\/$/, '')}
+            href={base || '/'}
             class="{base.replace(/\/$/, '') === location
                 ? 'bg-indigo-500/60 hover:bg-indigo-500/75 text-white'
                 : 'text-white/60 hover:text-white'} -mx-2 px-2 py-1 transition duration-150 ease-in-out rounded-sm"

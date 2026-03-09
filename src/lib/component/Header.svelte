@@ -12,8 +12,8 @@
     class="flex items-center gap-3 px-6 bg-[hsl(225,20%,15%)] w-full h-[70px] border-b-[1px] border-gray-700 z-[1200] fixed top-0 left-0"
 >
     <a
-        href={base}
-        class="flex items-center gap-2 me-auto text-[1.4rem]"
+        href={base || '/'}
+        class="flex items-center ps-10 bg-[url('/favicon.svg')] bg-left bg-no-repeat bg-contain text-xl font-semibold h-[32px] cursor-pointer"
         on:click={() => sidebarToggle.set(false)}
     >
         <span
