@@ -7,6 +7,8 @@
     import Sidebar from '$lib/component/Sidebar.svelte';
     import Footer from '$lib/component/Footer.svelte';
 
+    let { children } = $props();
+
     const searchSource = documentation.flatMap(category =>
         category.pages.map(page => ({
             title: page.title,
@@ -48,7 +50,7 @@
                 ? 'justify-center items-center gap-6 text-xl'
                 : 'flex-col'} p-6 leading-7 w-full max-w-5xl"
         >
-            <slot />
+            {@render children()}
         </main>
         <Footer />
     </div>
