@@ -15,7 +15,7 @@
 <div
     class="flex items-start gap-4 px-5 py-4 {states[
         item.type
-    ]} text-[15px] leading-5 rounded-lg"
+    ]} leading-5 rounded-lg"
 >
     {#if item.type === 'alert-success'}
         <CircleCheck size={20} />
