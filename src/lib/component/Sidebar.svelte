@@ -14,7 +14,7 @@
 <aside
     class="{$sidebarToggle
         ? 'left-0'
-        : '-left-[100vw]'} p-6 bg-slate-800 md:bg-transparent w-full min-w-[250px] max-w-[calc(100%-24px)] md:max-w-[250px] h-[calc(100vh-70px)] transition-[left] duration-150 ease-in-out border-e-[1px] border-gray-700 overflow-y-auto z-[1000] fixed md:sticky top-[70px]"
+        : '-left-[150vw]'} p-6 bg-slate-800 md:bg-transparent w-full min-w-64 max-w-[calc(100%-24px)] md:max-w-64 h-[calc(100vh-72px)] transition-[left] duration-250 ease-in-out border-e border-gray-700 overflow-y-auto z-1000 fixed md:sticky top-18"
 >
     <div class="md:hidden mb-6">
         <Search {searchSource} />

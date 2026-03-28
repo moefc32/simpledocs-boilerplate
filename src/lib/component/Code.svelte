@@ -53,7 +53,7 @@
 <div
     class="my-3 bg-[#282c34] w-full max-w-[calc(100vw-4rem)] rounded-lg overflow-hidden"
 >
-    <div bind:this={editorContainer} class="text-sm w-full min-h-[15px]"></div>
+    <div bind:this={editorContainer} class="text-sm w-full min-h-4"></div>
 </div>
 
 <style>

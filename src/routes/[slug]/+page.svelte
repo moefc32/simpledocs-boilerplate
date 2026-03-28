@@ -29,7 +29,7 @@
 </svelte:head>
 
 <div class="flex flex-1 flex-col gap-3">
-    <h1 class="my-3 pb-3 text-5xl border-b-[1px] border-gray-700">
+    <h1 class="my-3 pb-3 text-5xl border-b border-gray-700">
         {title}
     </h1>
     {#each contents as item, i}

@@ -42,7 +42,7 @@
 </svelte:head>
 
 <Header {searchSource} />
-<div class="flex flex-1 items-stretch pt-[70px] h-full">
+<div class="flex flex-1 items-stretch pt-18 h-full">
     <Sidebar {searchSource} {documentation} />
     <div class="flex flex-1 flex-col gap-6 md:max-w-[calc(100%-250px)]">
         <main
