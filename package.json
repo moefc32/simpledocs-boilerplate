@@ -35,11 +35,13 @@
         "fuse.js": "^7.3.0",
         "ky": "^1.14.3",
         "lucide-svelte": "^0.563.0",
-        "pdfjs-dist": "^4.10.38"
+        "pdfjs-dist": "^4.10.38",
+        "plyr": "^3.8.4"
     },
     "pnpm": {
         "onlyBuiltDependencies": [
             "@tailwindcss/oxide",
+            "core-js",
             "esbuild"
         ]
     }
