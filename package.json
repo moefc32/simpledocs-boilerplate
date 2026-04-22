@@ -12,12 +12,12 @@
     },
     "devDependencies": {
         "@sveltejs/adapter-static": "^3.0.10",
-        "@sveltejs/kit": "^2.57.1",
+        "@sveltejs/kit": "^2.59.1",
         "@sveltejs/vite-plugin-svelte": "^5.1.1",
         "@tailwindcss/vite": "^4.2.4",
         "dotenv": "^16.6.1",
         "gh-pages": "^6.3.0",
-        "svelte": "^5.55.4",
+        "svelte": "^5.55.5",
         "tailwindcss": "^4.2.4",
         "tailwindcss-animate": "^1.0.7",
         "vite": "^6.4.2"
@@ -35,11 +35,13 @@
         "fuse.js": "^7.3.0",
         "ky": "^1.14.3",
         "lucide-svelte": "^0.563.0",
-        "pdfjs-dist": "^4.10.38"
+        "pdfjs-dist": "^4.10.38",
+        "plyr": "^3.8.4"
     },
     "pnpm": {
         "onlyBuiltDependencies": [
             "@tailwindcss/oxide",
+            "core-js",
             "esbuild"
         ]
     }
