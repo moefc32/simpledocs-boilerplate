@@ -1,0 +1,5 @@
+allowBuilds:
+  core-js: true
+  esbuild: true
+minimumReleaseAgeExclude:
+  - '@codemirror/view@6.43.4'
