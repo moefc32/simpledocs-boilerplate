@@ -1,5 +1,5 @@
 <script>
-    import { Link, MoveRight } from 'lucide-svelte';
+    import { Link, MoveRight } from '@lucide/svelte';
 
     export let item;
 </script>
