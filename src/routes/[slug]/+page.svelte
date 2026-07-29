@@ -10,7 +10,7 @@
     import Video from '$lib/component/Video.svelte';
     import PdfReader from '$lib/component/PdfReader.svelte';
     import Maps from '$lib/component/Maps.svelte';
-    import { ChevronLeft, ChevronRight } from 'lucide-svelte';
+    import { ChevronLeft, ChevronRight } from '@lucide/svelte';
 
     export let data;
 

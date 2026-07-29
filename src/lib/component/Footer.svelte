@@ -12,7 +12,7 @@
         &copy; {currentYear}
     </div>
     <div class="flex-1 text-center md:text-right">
-        This web page is licensed under
+        This web project is licensed under
         <a
             href="https://opensource.org/licenses/MIT"
             target="_blank"

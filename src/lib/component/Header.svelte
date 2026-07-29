@@ -1,6 +1,6 @@
 <script>
     import { base } from '$app/paths';
-    import { Menu } from 'lucide-svelte';
+    import { Menu } from '@lucide/svelte';
 
     import sidebarToggle from './stores/sidebarToggle';
     import Search from './Search.svelte';
