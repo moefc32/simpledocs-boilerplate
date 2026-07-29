@@ -1,5 +1,5 @@
 <script>
-    import { CircleCheck, TriangleAlert, CircleX, Info } from 'lucide-svelte';
+    import { CircleCheck, TriangleAlert, CircleX, Info } from '@lucide/svelte';
 
     export let item;
 
