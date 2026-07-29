@@ -32,6 +32,9 @@ importers:
       '@fontsource-variable/reddit-mono':
         specifier: ^5.3.0
         version: 5.3.0
+      '@lucide/svelte':
+        specifier: ^1.27.0
+        version: 1.27.0(svelte@5.56.8)
       codemirror:
         specifier: ^6.0.2
         version: 6.0.2
@@ -300,6 +303,11 @@ packages:
 
   '@lezer/lr@1.4.10':
     resolution: {integrity: sha512-rnCpTIBafOx4mRp43xOxDJbFipJm/c0cia/V5TiGlhmMa+wsSdoGmUN3w5Bqrks/09Q/D4tNAmWaT8p6NRi77A==}
+
+  '@lucide/svelte@1.27.0':
+    resolution: {integrity: sha512-qzNBHdqy/MKp2qxuy/DcYELuep6h19fjo+4ech8fZsS4GtZeBtg5jgCTRQvLvwhppt0mhRN6qt8Nt8rPb/J4Ag==}
+    peerDependencies:
+      svelte: ^5
 
   '@marijn/find-cluster-break@1.0.3':
     resolution: {integrity: sha512-FY+MKLBoTsLNJF/eLWaOsXGdz6uh3Iu1axjPf6TUq92IYumcTcXWHoS747JARLkcdlJ/Waiaxc5wQfFO8jC6NA==}
@@ -1356,6 +1364,10 @@ snapshots:
   '@lezer/lr@1.4.10':
     dependencies:
       '@lezer/common': 1.5.2
+
+  '@lucide/svelte@1.27.0(svelte@5.56.8)':
+    dependencies:
+      svelte: 5.56.8
 
   '@marijn/find-cluster-break@1.0.3': {}
 

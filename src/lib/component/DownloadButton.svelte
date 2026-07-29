@@ -1,5 +1,5 @@
 <script>
-    import { Download } from 'lucide-svelte';
+    import { Download } from '@lucide/svelte';
     import ky from 'ky';
 
     export let item;

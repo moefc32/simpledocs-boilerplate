@@ -1,7 +1,7 @@
 <script>
     import { onMount } from 'svelte';
     import { base } from '$app/paths';
-    import { Search } from 'lucide-svelte';
+    import { Search } from '@lucide/svelte';
     import Fuse from 'fuse.js';
 
     import sidebarToggle from './stores/sidebarToggle';
