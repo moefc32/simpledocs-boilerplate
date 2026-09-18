@@ -1,0 +1,53 @@
+---
+title: "Color Blocks"
+---
+
+Color blocks enable users to view a color palette, typically associated with a brand's visual identity. Each color is labeled with a semantic name for easy reference. This helps maintain consistency across designs and ensures accurate color usage. Additionally, color blocks display the corresponding values, providing a precise representation of each color.
+
+## Example
+
+A color block is added as an object inside the `contents` array. It requires a `type` set to `color-blocks` and an `items` array containing all the colors in the palette. Each item includes a `label` for the color's semantic name, a `blockColor` for the color value, and a `textColor` to define the displayed text color.
+
+```json
+{
+    "type": "color-blocks",
+    "items": [
+        {
+            "label": "Soda Pop",
+            "blockColor": "#74b5ec",
+            "textColor": "#000000"
+        },
+        {
+            "label": "Lime Fizz",
+            "blockColor": "#98ca5e",
+            "textColor": "#000000"
+        },
+        {
+            "label": "Lemon Drop",
+            "blockColor": "#ffda66",
+            "textColor": "#000000"
+        },
+        {
+            "label": "Cherry Pop",
+            "blockColor": "#ee7c84",
+            "textColor": "#000000"
+        }
+    ]
+}
+```
+
+```json
+{
+    "type": "code",
+    "value": {
+        "type": "color-blocks",
+        "items": [
+            {
+                "label": "<color's semantic name>",
+                "blockColor": "<color's code>",
+                "textColor": "<text color code>"
+            }
+        ]
+    }
+}
+```

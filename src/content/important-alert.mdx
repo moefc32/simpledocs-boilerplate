@@ -1,0 +1,96 @@
+---
+title: "Important Alert"
+---
+
+Alerts highlight important information within the documentation. They can be used to display warnings, tips, or critical notices that require user attention. Instead of manually formatting alerts, they are structured as objects just like other elements for consistency and proper styling.
+
+## Example
+
+Each alert is stored as an object inside the `contents` array of a page. The object must have a `type` property set to `alert` and a `value` property containing the message to display. This ensures a clear and structured presentation of important information.
+
+Alerts support multiple variations to convey different levels of importance. The `type` property can be set to `alert` for a standard message or modified to `alert-info`, `alert-success`, `alert-warning`, or `alert-danger` for different visual styles. These variations help distinguish between general information, confirmations, cautionary notes, and critical warnings, ensuring that messages are clear and appropriately emphasized.
+
+```json
+{
+    "type": "alert",
+    "value": "Show some information here..."
+}
+```
+
+```json
+{
+    "type": "code",
+    "value": {
+        "type": "alert",
+        "value": "<some informative text>"
+    }
+}
+```
+
+```json
+{
+    "type": "alert-info",
+    "value": "Show some information here..."
+}
+```
+
+```json
+{
+    "type": "code",
+    "value": {
+        "type": "alert-info",
+        "value": "<some informative text>"
+    }
+}
+```
+
+```json
+{
+    "type": "alert-success",
+    "value": "Show some information here..."
+}
+```
+
+```json
+{
+    "type": "code",
+    "value": {
+        "type": "alert-success",
+        "value": "<some informative text>"
+    }
+}
+```
+
+```json
+{
+    "type": "alert-warning",
+    "value": "Show some information here..."
+}
+```
+
+```json
+{
+    "type": "code",
+    "value": {
+        "type": "alert-warning",
+        "value": "<some informative text>"
+    }
+}
+```
+
+```json
+{
+    "type": "alert-danger",
+    "value": "Show some information here..."
+}
+```
+
+```json
+{
+    "type": "code",
+    "value": {
+        "type": "alert-danger",
+        "value": "<some informative text>"
+    }
+}
+```

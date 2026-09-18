@@ -1,0 +1,26 @@
+---
+import { CircleCheck, TriangleAlert, CircleX, Info } from '@lucide/svelte';
+
+const { type, text } = Astro.props;
+
+const config = {
+    default: { classes: 'bg-slate-500/40 text-white/85', icon: Info },
+    info: { classes: 'bg-blue-400/85 text-black', icon: Info },
+    success: { classes: 'bg-green-400/85 text-black', icon: CircleCheck },
+    warning: { classes: 'bg-yellow-400/85 text-black', icon: TriangleAlert },
+    danger: { classes: 'bg-red-400/85 text-white/85', icon: CircleX },
+};
+
+const current = config[type] || config['default'];
+const Icon = current.icon;
+---
+
+<div
+    class:list={[
+        'flex items-start gap-4 px-5 py-4 leading-5 rounded-lg',
+        current.classes,
+    ]}
+>
+    <Icon size={20} />
+    {text}
+</div>

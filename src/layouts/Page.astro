@@ -1,0 +1,58 @@
+---
+import { imageSizeFromFile } from 'image-size/fromFile';
+import { owner } from '../lib/config';
+
+import Layout from './Layout.astro';
+import Header from '../components/Header.svelte';
+import Sidebar from '../components/Sidebar.astro';
+import Footer from '../components/Footer.astro';
+
+const { pageMetadata } = Astro.props;
+
+const imageDimensions = pageMetadata.image
+    ? await imageSizeFromFile('./public/res/featured/' + pageMetadata.image)
+    : undefined;
+
+const pageOpengraph = {
+    author: owner.displayName,
+    ...(pageMetadata.image && {
+        image: {
+            url: `/res/featured/${pageMetadata.image}`,
+            width: imageDimensions?.width,
+            height: imageDimensions?.height,
+        },
+    }),
+    type: 'article',
+};
+---
+
+<Layout pageTitle={pageMetadata.title} pageOpengraph={pageOpengraph}>
+    <Header />
+    <div class="flex flex-1 items-stretch pt-18 h-full">
+        <Sidebar />
+        <div class="flex flex-1 flex-col gap-6 md:max-w-[calc(100%-250px)]">
+            <main class="flex flex-1 flex-col p-6 leading-7 w-full max-w-5xl">
+                <article class="flex flex-col gap-3">
+                    {
+                        !!pageMetadata.title && (
+                            <h1 class="my-3 pb-3 text-5xl border-b border-gray-700">
+                                {pageMetadata.title}
+                            </h1>
+                        )
+                    }
+                    <div
+                        class:list={[
+                            { 'mt-3': !pageMetadata.title },
+                            'prose dark:prose-invert xl:ms-auto max-w-full',
+                            'prose-h2:my-6 prose-h2:text-3xl prose-h2:font-normal',
+                            'prose-h3:my-4 prose-li:prose-p:my-0',
+                        ]}
+                    >
+                        <slot />
+                    </div>
+                </article>
+            </main>
+            <Footer />
+        </div>
+    </div>
+</Layout>

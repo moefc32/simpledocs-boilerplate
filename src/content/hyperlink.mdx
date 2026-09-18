@@ -1,0 +1,28 @@
+---
+title: "Hyperlink"
+---
+
+Hyperlinks allow users to navigate to external websites or related resources, improving connectivity and accessibility. Well-placed links help users find relevant information without unnecessary searching. A consistent linking approach improves readability and maintainability, ensuring a seamless user experience. Properly labeled links also enhance accessibility by providing clear context about the destination.
+
+## Example
+
+A hyperlink is added as an object inside the `contents` array. It requires a `type` set to `hyperlink`, a `label` for the title of the hyperlink element, and a `target` for the destination URL. Make sure the URL is correct to avoid broken links and preserve a good user experience.
+
+```json
+{
+    "type": "hyperlink",
+    "label": "Faizal Chan's Website",
+    "target": "https://mf-chan.com"
+}
+```
+
+```json
+{
+    "type": "code",
+    "value": {
+        "type": "hyperlink",
+        "label": "<label for target URL>",
+        "target": "<target URL>"
+    }
+}
+```

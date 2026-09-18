@@ -1,0 +1,33 @@
+---
+title: "Image"
+---
+
+Images can be embedded to illustrate concepts, provide visual references, or serve any other purpose to enhance documentation. They can be used to display diagrams, screenshots, or any other visual content that helps clarify information. Instead of embedding raw image links directly into the content, images are structured as objects, allowing for additional customization such as setting width or background color. This ensures consistency in how images appear across different pages.
+
+## Example
+
+To add an image, an object must be placed inside the `contents` array of a page. The object requires a `type` property set to `image`, a `title` that serves as an accessible label, and a `target` that defines the file path or URL of the image.
+
+<Image src="/docs/bridge.webp" title="Bridge image" />
+
+```html
+<Image src="/docs/bridge.webp" title="Bridge image" />
+```
+
+Additional properties can be included to customize how the image is displayed. If the image needs a specific size, the optional `width` property can be added. This gives control over its dimensions, ensuring it fits well within the content layout without being too large or too small. The maximum width of an image will not exceed the page width, preventing layout issues or overflow.
+
+<Image src="/docs/bridge.webp" title="Bridge image" width="450px" />
+
+```html
+<Image src="/docs/bridge.webp" title="Bridge image" width="450px" />
+```
+
+For further customization, a `background` property can be included to apply a background color (e.g. `#ffffff`) behind the image. This is useful when an image has transparency or requires a specific background to stand out against the page.
+
+<Image src="/docs/bridge.webp" title="Bridge image" background="#ffffff" width="450px" />
+
+```html
+<Image src="/docs/bridge.webp" title="Bridge image" background="#ffffff" width="450px" />
+```
+
+By combining these properties, images can be displayed in a way that best fits the documentation’s design and readability. Properly formatted image objects ensure that visuals remain clear, accessible, and consistent across different sections.

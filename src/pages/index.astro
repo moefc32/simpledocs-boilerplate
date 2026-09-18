@@ -1,0 +1,11 @@
+---
+import components from '../lib/components';
+
+import Layout from '../layouts/Page.astro';
+import { Content, frontmatter } from './_index.md';
+---
+
+<Layout pageMetadata={frontmatter}>
+    
+    <Content {components} />
+</Layout>

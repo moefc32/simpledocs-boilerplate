@@ -1,0 +1,21 @@
+---
+title: "Code Snippet"
+---
+
+Code snippets allow documentation to include properly formatted code examples. This element is essential for providing clear instructions, demonstrating syntax, or showcasing implementations. Instead of adding raw code as plain text, snippets are structured JSON that ensure proper rendering and formatting.
+
+## Example
+
+Each snippet is stored as an object inside the `contents` array of a page. The object must have a `type` property set to `code` and a `value` property containing the actual code as a string. This approach keeps content structured and ensures consistency in how code is displayed.
+
+```json
+{
+    "type": "code",
+    "value": {
+        "type": "code",
+        "value": "<stringified JSON>"
+    }
+}
+```
+
+The `value` field stores the JSON code as a string, which will be converted back into a JSON object when rendered. To prevent errors, ensure the stringified JSON is properly formatted and valid. This includes escaping special characters, maintaining correct syntax, and verifying that the structure remains intact when parsed.

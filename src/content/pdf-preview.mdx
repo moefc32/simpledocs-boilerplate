@@ -1,0 +1,26 @@
+---
+title: "PDF Preview"
+---
+
+PDF files can be embedded for direct viewing, allowing users to read documents without needing to download them. This is useful for displaying reports, guides, manuals, whitepapers, or any other material that benefits from being accessible within the page. Embedded PDFs ensure that formatting remains intact across devices. This approach improves usability by keeping content within the site, reducing interruptions caused by external downloads.
+
+## Example
+
+To embed a PDF, an entry should be added inside the `contents` array. It requires a `type` set to `pdf` and a `target` that specifies the file path or URL of the document.
+
+```json
+{
+    "type": "pdf",
+    "target": "/docs/paper"
+}
+```
+
+```json
+{
+    "type": "code",
+    "value": {
+        "type": "pdf",
+        "target": "<path to PDF file>"
+    }
+}
+```

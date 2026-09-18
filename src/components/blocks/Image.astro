@@ -1,0 +1,25 @@
+---
+const { src, title, background, width } = Astro.props;
+---
+
+{
+    background ? (
+        <div class="p-3 w-full rounded-lg" style={`background: ${background};`}>
+            <img
+                src={src}
+                alt={title}
+                class="m-0! w-full"
+                style={`max-width: ${width ? `min(${width}, 100%)` : '100%'};`}
+                title={title || 'Image'}
+            />
+        </div>
+    ) : (
+        <img
+            src={src}
+            alt={title}
+            class="w-full border-1 border-gray-700 rounded-sm"
+            style={`max-width: ${width ? `min(${width}, 100%)` : '100%'};`}
+            title={title || 'Image'}
+        />
+    )
+}

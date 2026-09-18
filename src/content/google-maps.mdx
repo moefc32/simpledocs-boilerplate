@@ -1,0 +1,26 @@
+---
+title: "Google Maps"
+---
+
+Google Maps can be embedded to display locations, provide directions, or highlight points of interest without requiring users to leave the page. This is useful for contact pages, event locations, store locators, or travel guides where visual maps enhance understanding. Users can zoom, pan, and interact with the map to explore areas in detail. Embedding a map streamlines navigation by allowing visitors to get directions instantly, improving accessibility and user experience.
+
+## Example
+
+To embed a Google Map, an entry should be placed inside the `contents` array. It requires a `type` set to `maps` and a `target` that specifies the Google Maps embed URL.
+
+```json
+{
+    "type": "maps",
+    "target": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9007508209093!2d107.61612687492338!3d-6.902471493096827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e64c5e8866e5%3A0x37be7ac9d575f7ed!2sGedung%20Sate!5e0!3m2!1sen!2sid!4v1741356033484!5m2!1sen!2sid"
+}
+```
+
+```json
+{
+    "type": "code",
+    "value": {
+        "type": "maps",
+        "target": "<Google Maps embed URL>"
+    }
+}
+```

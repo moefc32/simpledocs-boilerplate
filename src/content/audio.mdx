@@ -1,0 +1,26 @@
+---
+title: "Audio"
+---
+
+Audio files can be embedded to provide spoken explanations, sound effects, or other auditory content. For example, a tutorial on musical software could include sample sounds for each feature, while a language-learning guide could provide pronunciation clips. Embedding audio can also improve accessibility by offering spoken versions of text content for visually impaired users.
+
+## Example
+
+To include an audio file, an entry should be placed inside the `contents` array. It requires a `type` set to `audio` and a `target` that specifies the file path or URL of the audio source.
+
+```json
+{
+    "type": "audio",
+    "target": "https://static.mf-chan.com/dummy/casa_rosa-pienso_viento.mp3"
+}
+```
+
+```json
+{
+    "type": "code",
+    "value": {
+        "type": "audio",
+        "target": "<path to audio file>"
+    }
+}
+```

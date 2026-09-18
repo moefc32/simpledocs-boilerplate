@@ -1,0 +1,45 @@
+---
+title: "Video"
+---
+
+Videos can be embedded to provide demonstrations, tutorials, or visual explanations. They help convey complex ideas more effectively by showing concepts in action rather than just describing them with text. Both locally hosted video files and YouTube embeds are supported.
+
+## Example
+
+To embed a common video file, an entry should be placed inside the `contents` array. It requires a `type` set to `video` and a `target` that specify the file path or URL of the video.
+
+```json
+{
+    "type": "video",
+    "target": "https://static.mf-chan.com/dummy/copyrightcloud-nature.mp4"
+}
+```
+
+```json
+{
+    "type": "code",
+    "value": {
+        "type": "video",
+        "target": "<path to video file>"
+    }
+}
+```
+
+For embedding a YouTube video, the `type` should be set to `video-youtube` and the `target` must be a valid YouTube embed URL.
+
+```json
+{
+    "type": "video-youtube",
+    "target": "https://www.youtube.com/embed/cHBqwj0Ed_I?si=a7QK9B_pPqYsBjUC"
+}
+```
+
+```json
+{
+    "type": "code",
+    "value": {
+        "type": "video-youtube",
+        "target": "<YouTube video embed URL>"
+    }
+}
+```

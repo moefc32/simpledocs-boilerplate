@@ -1,0 +1,106 @@
+---
+title: "Download Button"
+---
+
+A download button provides a way to link files for users to download directly from the documentation. This can be useful for sharing resources such as PDFs, software packages, templates, or any other downloadable content. Instead of manually adding links, the button is structured as an object to maintain consistency and ease of customization.
+
+## Example
+
+Each download button is stored as an object inside the `contents` array of a page. The object must have a `type` property, a `label` that defines the button text, and a `target` that specifies the file path or URL.
+
+Different variations of the download button can be used to indicate the nature of the provided file. The `type` property supports multiple values for styling and context. Using `download` creates a standard button, while `download-info`, `download-success`, `download-warning`, and `download-danger` apply different visual styles to convey additional meaning. These variations help users distinguish between general downloads, informational resources, successful actions, warnings, or potentially critical files.
+
+```json
+{
+    "type": "download",
+    "label": "Download Example",
+    "target": "/docs/bridge.webp"
+}
+```
+
+```json
+{
+    "type": "code",
+    "value": {
+        "type": "download",
+        "label": "<label for download button>",
+        "target": "<path to file>"
+    }
+}
+```
+
+```json
+{
+    "type": "download-info",
+    "label": "Download Example",
+    "target": "/docs/bridge.webp"
+}
+```
+
+```json
+{
+    "type": "code",
+    "value": {
+        "type": "download-info",
+        "label": "<label for download-info button>",
+        "target": "<path to file>"
+    }
+}
+```
+
+```json
+{
+    "type": "download-success",
+    "label": "Download Example",
+    "target": "/docs/bridge.webp"
+}
+```
+
+```json
+{
+    "type": "code",
+    "value": {
+        "type": "download-success",
+        "label": "<label for download-success button>",
+        "target": "<path to file>"
+    }
+}
+```
+
+```json
+{
+    "type": "download-warning",
+    "label": "Download Example",
+    "target": "/docs/bridge.webp"
+}
+```
+
+```json
+{
+    "type": "code",
+    "value": {
+        "type": "download-warning",
+        "label": "<label for download-warning button>",
+        "target": "<path to file>"
+    }
+}
+```
+
+```json
+{
+    "type": "download-danger",
+    "label": "Download Example",
+    "target": "/docs/bridge.webp"
+}
+```
+
+```json
+{
+    "type": "code",
+    "value": {
+        "type": "download-danger",
+        "label": "<label for download-danger button>",
+        "target": "<path to file>"
+    }
+}
+```

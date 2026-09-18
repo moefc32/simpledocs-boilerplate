@@ -1,0 +1,60 @@
+---
+import { getCollection, render } from 'astro:content';
+import { ChevronLeft, ChevronRight } from '@lucide/svelte';
+import components from '../lib/components';
+
+import Layout from '../layouts/Page.astro';
+
+export async function getStaticPaths() {
+    const posts = await getCollection('documentation');
+
+    return posts.map(post => ({
+        params: {
+            slug: post.id,
+        },
+        props: {
+            post,
+        },
+    }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const previousPage = '';
+const nextPage = '';
+---
+
+<Layout pageMetadata={post.data}>
+    <Content {components} />
+    <nav class="flex justify-between items-center gap-3 mt-6">
+        <div class="flex justify-start items-center">
+            {
+                previousPage && (
+                    <a
+                        href={previousPage.slug}
+                        class="flex items-center gap-2 px-4 py-3 hover:bg-gray-700/50 transition duration-150 ease-in-out border-1 border-gray-700 rounded-lg"
+                        title="Navigate to previous page"
+                    >
+                        <ChevronLeft size={16} />
+                        <span class="text-sm">{previousPage.title}</span>
+                    </a>
+                )
+            }
+        </div>
+        <div class="flex justify-end items-center">
+            {
+                nextPage && (
+                    <a
+                        href={nextPage.slug}
+                        class="flex items-center gap-2 px-4 py-3 hover:bg-gray-700/50 transition duration-150 ease-in-out border-1 border-gray-700 rounded-lg"
+                        title="Navigate to next page"
+                    >
+                        <span class="text-sm">{nextPage.title}</span>
+                        <ChevronRight size={16} />
+                    </a>
+                )
+            }
+        </div>
+    </nav>
+</Layout>
